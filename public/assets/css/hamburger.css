@@ -273,7 +273,7 @@
     font-weight: 700 !important;
 }
 
-.scroll-top::before {
+/* .scroll-top::before {
     content: "";
     position: absolute;
     background: #3d3d3d;
@@ -286,7 +286,7 @@
 
 .scroll-top:hover::before {
     top: 0;
-}
+} */
 
 @keyframes up {
     0% {

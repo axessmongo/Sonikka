@@ -24,6 +24,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .required {
+            color: red;
+        }
+    </style>
 </head>
 
 <body class="overflow-x-hidden">
@@ -56,34 +70,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#plans">Plans & Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#amenties">Amenties</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#recent-projects">Projects</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#location">Location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tour">Connect</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blogs</a>
+                        <a class="nav-link active" href="index.html">Go to Home</a>
                     </li>
                 </ul>
             </div>
@@ -96,7 +83,8 @@
         <div class="container d-flex align-items-center h-100 pt-5 justify-content-center justify-content-lg-start">
             <nav aria-label="breadcrumb" class="z-3">
                 <ol class="breadcrumb mt-4">
-                    <li class="breadcrumb-item"><a href="index.html" class="secondary-header" style="color: #58ff58;">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html" class="secondary-header"
+                            style="color: #58ff58;">Home</a></li>
                     <li class="breadcrumb-item active secondary-header text-light" aria-current="page">Blogs 1</li>
                 </ol>
             </nav>
@@ -105,12 +93,12 @@
 
     <section class="blog-viewer py-5">
         <div class="container">
-            <div class="position-relative mb-5">
-                <img class="img-fluid"
+            <div class="position-relative mb-5 col-md-10 mx-auto">
+                <img class="img-fluid rounded-1"
                     src="https://sample.realhomes.io/single-property-02/wp-content/uploads/sites/3/2021/09/slider-2-1-1240x720.jpg"
                     alt="">
                 <div
-                    class="col-md-9 position-absolute top-100 start-50 translate-middle bg-success text-white px-5 py-2">
+                    class="col-11 col-md-9 position-absolute top-100 start-50 translate-middle sonika-bg1 text-white px-5 py-4 rounded-1">
                     <h4 class="entry-title ">Standard Post Format</h4>
                     By <p class="text-white mb-1 d-inline-block">fahid</p> Posted in <a
                         href="https://sample.realhomes.io/single-property-02/category/luxury/"
@@ -118,225 +106,144 @@
                         datetime="2021-12-13T08:37:58+00:00">December 13, 2021</time>
                 </div>
             </div>
+
+
+            <div class="pt-5">
+                <h1 class="primary-header mb-3">Pros</h1>
+                <p class="primary-text mb-2 ">Holistically scale client-focused growth strategies rather than go
+                    forward potentialities.
+                    Continually incubate prospective action items with unique architectures. Holistically
+                    strategize
+                    just in time web services.</p>
+                <ol class="ps-4">
+                    <li class="mb-1">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
+                        pharetra a,
+                        ultricies in, diam. Sed arcu. Cras consequat.</li>
+                    <li class="mb-1">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+                        vulputate magna
+                        eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                        facilisis luctus, metus.</li>
+                    <li class="mb-1">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
+                        ligula
+                        vulputate
+                        sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet,
+                        nisi.
+                    </li>
+                    <li class="mb-1">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor,
+                        ultrices
+                        ut, elementum
+                        vulputate, nunc.</li>
+                    <li class="mb-1">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel,
+                        euismod vel,
+                        velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. </li>
+                </ol>
+            </div>
+
+            <div class="pt-5 mb-5">
+                <h2 class="tertary-header mb-3">Cons</h2>
+                <p class="primary-text mb-2 ">Holistically scale client-focused growth strategies rather than go
+                    forward potentialities.
+                    Continually incubate prospective action items with unique architectures. Holistically
+                    strategize
+                    just in time web services.</p>
+                <ol class="ps-4">
+                    <li class="mb-1">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
+                        pharetra a,
+                        ultricies in, diam. Sed arcu. Cras consequat.</li>
+                    <li class="mb-1">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+                        vulputate magna
+                        eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                        facilisis luctus, metus.</li>
+                </ol>
+            </div>
         </div>
     </section>
 
-    <section class=" bg-light">
+
+    <section class="bg-light common-padding">
         <div class="container">
-            <div class=" position-relative">
-                <div>
-                    <div class="px-5 py-4 ">
-                        <div class="position-relative mb-5">
-                            <img class="img-fluid"
-                                src="https://sample.realhomes.io/single-property-02/wp-content/uploads/sites/3/2021/09/slider-2-1-1240x720.jpg"
-                                alt="">
-                            <div
-                                class="col-md-9 position-absolute top-100 start-50 translate-middle bg-success text-white px-5 py-2">
-                                <h4 class="entry-title ">Standard Post Format</h4>
-                                By <p class="text-white mb-1 d-inline-block">fahid</p> Posted in <a
-                                    href="https://sample.realhomes.io/single-property-02/category/luxury/"
-                                    class="text-white">Luxury</a> On <time class="entry-date published text-white"
-                                    datetime="2021-12-13T08:37:58+00:00">December 13, 2021</time>
-                            </div>
-                        </div>
-                        <div class="mb-5">
-                            <p class="primary-text mb-3">Enthusiastically disintermediate progressive innovation before
-                                high-payoff
-                                metrics. Intrinsicly
-                                generate sticky services without B2B e-services. Competently revolutionize parallel
-                                applications
-                                with plug-and-play meta-services. Competently leverage other's global outsourcing for
-                                superior
-                                deliverables.</p>
-                            <p class="primary-text">Professionally transform enterprise architectures with
-                                client-centered
-                                leadership skills. Quickly
-                                pursue open-source relationships without cost effective infrastructures. Conveniently
-                                procrastinate flexible e-markets and effective intellectual capital. Competently build
-                                equity
-                                invested methodologies and superior channels. Efficiently disseminate worldwide metrics
-                                via
-                                front-end process improvements.</p>
-                        </div>
-                        <div class="mb-5">
-
-                            <p class="primary-header mb-3">This is H2 Heading</p>
-                            <p class="primary-text ">Holistically scale client-focused growth strategies rather than go
-                                forward potentialities.
-                                Continually incubate prospective action items with unique architectures. Holistically
-                                strategize
-                                just in time web services.</p>
-                            <ol class="">
-                                <li class="">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
-                                    pharetra a,
-                                    ultricies in, diam. Sed arcu. Cras consequat.</li>
-                                <li class="">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
-                                    vulputate magna
-                                    eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-                                    facilisis luctus, metus.</li>
-                                <li class="">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
-                                    ligula
-                                    vulputate
-                                    sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet,
-                                    nisi.
-                                </li>
-                                <li class="">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor,
-                                    ultrices
-                                    ut, elementum
-                                    vulputate, nunc.</li>
-                                <li class="">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel,
-                                    euismod vel,
-                                    velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. </li>
-                            </ol>
-                        </div>
-                        <div>
-                            <p class="tertary-header mb-3">This is H3 Heading
-                            </p>
-                            <P class="primary-text mb-0 ">Continually evolve open-source systems for highly efficient
-                                deliverables.
-                                Seamlessly
-                                extend
-                                dynamic content vis-a-vis reliable meta-services. Assertively underwhelm 24/365 methods
-                                of
-                                empowerment via strategic web-readiness. Competently architect strategic human capital
-                                before
-                                extensible growth strategies. Dramatically extend bricks-and-clicks bandwidth via
-                                market-driven
-                                human capital.</P>
-                            <div class="container p-4 justify-content-start my-5"
-                                style="background-color:rgb(223, 242, 223); line-height: 30px; border-radius: 10px;">
-                                <p><span style="font-size: 40px;">❝</span> Cras justo odio, dapibus ac facilisis in,
-                                    egestas
-                                    eget quam. Duis mollis, est non commodo
-                                    luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio
-                                    dui.
-                                    Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis
-                                    parturient
-                                    montes, nascetur ridiculus mus.</p>
-                            </div>
-                            <p>Proactively synthesize effective methodologies and synergistic networks.
-                                Dramatically envisioneer
-                                distinctive models with go forward supply chains. Competently extend client-centered
-                                markets
-                                through client-based value. Efficiently communicate web-enabled manufactured products
-                                after
-                                fully researched total linkage. Dynamically recaptiualize cooperative relationships
-                                after
-                                client-based internal or “organic” sources.</p>
-                            <p class="">Holisticly monetize low-risk high-yield platforms with standardized growth
-                                strategies.
-                                Assertively plagiarize bricks-and-clicks methods of empowerment with enabled
-                                initiatives.
-                                Uniquely disseminate magnetic human capital whereas functional web-readiness.
-                                Collaboratively
-                                promote fully researched communities via resource maximizing markets. Efficiently
-                                repurpose
-                                state of the art e-business with innovative bandwidth.
-                            </p>
-                        </div>
-                        <!-- <div class="container-fluid pap-card border1">
-                            <div class="d-flex justify-content-center my-5 pap-card">
-                                <ul class="nav nav-pills mb-5 text-center justify-content-md-evenly justify-content-center my-5 text-capitalize p-10 m-0 w-100"
-                                    id="pills-tab" role="tablist">
-
-                                    <div class="col-12 col-md d-flex justify-content-center">
-                                        <li class="nav-item py-1 w-100 d-flex align-items-center justify-content-center"
-                                            data-aos="fade-left" data-aos-duration="400" role="presentation">
-                                            <button
-                                                class="nav-link col-4 col-md-12 active border pap-card py-2 px-5 bg-primary text-white"
-                                                id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All"
-                                                type="button" role="tab" aria-controls="pills-All"
-                                                aria-selected="true">All</button>
-                                        </li>
-                                    </div>
-                                    <div class="col-6 col-md justify-content-center">
-                                        <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2"
-                                            data-aos="fade-left" data-aos-duration="1000" role="presentation">
-                                            <button
-                                                class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly gradient-bg text-white"
-                                                id="pills-Interviews-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-Interviews" type="button" role="tab"
-                                                aria-controls="pills-Interviews"
-                                                aria-selected="false">Interviews</button>
-                                        </li>
-                                    </div>
-                                    <div class="col-6 col-md justify-content-center">
-                                        <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2"
-                                            data-aos="fade-left" data-aos-duration="1000" role="presentation">
-                                            <button
-                                                class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly gradient-bg text-white"
-                                                id="pills-About-tab" data-bs-toggle="pill" data-bs-target="#pills-About"
-                                                type="button" role="tab" aria-controls="pills-About"
-                                                aria-selected="false">About</button>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div> -->
-
-
-
-
-
-
-
-
-
-
-                        <div class="mb-5 ">
-                            <h2 class="tertary-header ">Leave a Reply</h2>
-                            <div class="">Your email address will not be published.
-                                Required fields are marked *</div>
-
-                            <div class="row container-contact">
-                                <div class="col-md-5">
-                                    <div class="">
-                                        <h2 class="quartary-header">Contact Us</h2>
-                                        <form action="#" method="post">
-
-
-                                            <div class="comment-form-author"><label for="author" class="d-block mb-2">Name <span
-                                                        class="required">*</span></label> <input id="author"
-                                                    name="author" type="text" value="" size="30" maxlength="245"
-                                                    autocomplete="name" required="required"></div>
-
-                                            <div class="comment-form-email"><label for="email" class="d-block mb-2">Email <span
-                                                        class="required">*</span></label> <input id="email" name="email"
-                                                    type="text" value="" size="30" maxlength="100"
-                                                    aria-describedby="email-notes" autocomplete="email"
-                                                    required="required">
-                                            </div>
-                                            <div class="comment-form-url"><label for="url" class="d-block mb-2">phone<span
-                                                        class="required">*</span></label> <input id="url" name="url"
-                                                    type="text" value="" size="30" maxlength="200" autocomplete="url">
-                                            </div>
-
-                                            <div><label for="message_ere_widget_contact_form-3" class="d-block mb-2">Message</label><textarea
-                                                    name="message" id="message_ere_widget_contact_form-3"
-                                                    class="required" style="height: 150px; resize: none;"
-                                                    title="* Please provide your message" cols="40" rows="5"></textarea>
-                                            </div>
-
-                                            <button type="submit" class="btn btn2">Send Message</button>
-
-
-                                           
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="https://img.freepik.com/free-vector/customer-support-flat-design-illustration_23-2148889374.jpg?size=626&ext=jpg&uid=R124346864&ga=GA1.1.1827951686.1699429508&semt=ais"
-                                        alt="Flower Image" class="flower-image">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
+            <div class="text-center">
+                <h1 class="secondary-header mb-2" data-aos="fade-up" data-aos-duration="600">Floor Plans</h1>
+                <p class="primary-text mb-5" data-aos="fade-up" data-aos-duration="700">
+                    Amazingly Constructed and Well Maintained Spaces</p>
             </div>
+            <p class="primary-text">Continually evolve open-source systems for highly efficient deliverables. Seamlessly
+                extend dynamic content vis-a-vis reliable meta-services. Assertively underwhelm 24/365 methods
+                of empowerment via strategic web-readiness. Competently architect strategic human capital before
+                extensible growth strategies. Dramatically extend bricks-and-clicks bandwidth via market-driven human
+                capital.</p>
+            <div class="container justify-content-start my-5 sonika-bg1 rounded-3 py-5 px-5">
+                <p class="text-light primary-text"><span style="font-size: 40px;">❝</span> Cras justo odio, dapibus ac
+                    facilisis in,
+                    egestas
+                    eget quam. Duis mollis, est non commodo
+                    luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio
+                    dui.
+                    Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis
+                    parturient
+                    montes, nascetur ridiculus mus.</p>
+            </div>
+            <p class="primary-text">
+                Proactively synthesize effective methodologies and synergistic networks. Dramatically envisioneer
+                distinctive models with go forward supply chains. Competently extend client-centered markets through
+                client-based value. Efficiently communicate web-enabled manufactured products after fully researched
+                total linkage. Dynamically recaptiualize cooperative relationships after client-based internal or
+                “organic” sources.
+            </p>
+            <p class="primary-text">
+                Holisticly monetize low-risk high-yield platforms with standardized growth strategies. Assertively
+                plagiarize bricks-and-clicks methods of empowerment with enabled initiatives. Uniquely disseminate
+                magnetic human capital whereas functional web-readiness. Collaboratively promote fully researched
+                communities via resource maximizing markets. Efficiently repurpose state of the art e-business with
+                innovative bandwidth.
+            </p>
         </div>
+    </section>
+
+    <section class="blog-contact common-padding">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="primary-header mb-2" data-aos="fade-up" data-aos-duration="600">Connect With Us
+                </h1>
+                <p class="primary-text mb-5 " data-aos="fade-up" data-aos-duration="700">
+                    Get in Touch With Us for Any Questions & Help
+                </p>
+            </div>
+            <div class="row container-contact g-5">
+                <div class="col-md-6">
+                    <div class="">
+                        <form action="#" method="post">
+                            <div class="comment-form-author"><label for="author" class="d-block mb-2">Name <span
+                                        class="required">*</span></label>
+                                <input id="author" name="author" type="text" value="" size="30" maxlength="245"
+                                    autocomplete="name" required="required">
+                            </div>
+
+                            <div class="comment-form-email"><label for="email" class="d-block mb-2">Email <span
+                                        class="required">*</span></label>
+                                <input id="email" name="email" type="text" value="" size="30" maxlength="100"
+                                    aria-describedby="email-notes" autocomplete="email" required="required">
+                            </div>
+                            <div class="comment-form-url"><label for="url" class="d-block mb-2">phone<span
+                                        class="required">*</span></label>
+                                <input id="url" name="url" type="text" value="" size="30" maxlength="200"
+                                    autocomplete="url">
+                            </div>
+                            <div><label for="message_ere_widget_contact_form-3"
+                                    class="d-block mb-2">Message</label><textarea name="message"
+                                    id="message_ere_widget_contact_form-3" class="required"
+                                    style="height: 150px; resize: none;" title="* Please provide your message" cols="40"
+                                    rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn2">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://img.freepik.com/free-vector/customer-support-flat-design-illustration_23-2148889374.jpg?size=626&ext=jpg&uid=R124346864&ga=GA1.1.1827951686.1699429508&semt=ais"
+                        alt="Flower Image" class="flower-image">
+                </div>
+            </div>
         </div>
     </section>
 

@@ -323,6 +323,12 @@ input::placeholder {
     }
 }
 
+/* blog-viewer-section */
+
+.blog-viewer img {
+    height: 400px;
+}
+
 /* feature section css starts here */
 
 .features {
