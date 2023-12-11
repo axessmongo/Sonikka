@@ -126,7 +126,6 @@ try {
             });
         });
 
-
         $('.project-left').click(function () {
             var targetOffset = $(this).offset().top - ($(window).height() - $(this).outerHeight()) / 2;
 
@@ -141,7 +140,7 @@ try {
         var cardData = [
             {
                 id: 'blog1',
-                image: 'assets/imagesandvectors/carousel/carousel_img_1.jpg',
+                image: 'assets/imagesandvectors/carousel/carousel-img-1.jpg',
                 title: 'Standard Post Format',
                 text: 'Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky…'
             },
@@ -159,7 +158,7 @@ try {
             },
             {
                 id: 'blog4',
-                image: 'assets/imagesandvectors/carousel/carousel_img_1.jpg',
+                image: 'assets/imagesandvectors/carousel/carousel-img-1.jpg',
                 title: 'Standard Post Format',
                 text: 'Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky…'
             },
@@ -200,7 +199,7 @@ try {
         pageElement.remove();
 
 
-        $(".owl-carousel").owlCarousel({
+        $(".owl-carousel-blog").owlCarousel({
             items: 3, // Number of items to display
             loop: true, // Infinite loop
             margin: 20, // Margin between items
@@ -208,6 +207,30 @@ try {
             autoplay: true,
             autoplayTimeout: 2000, // Pause for 3 seconds between slides
             autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 0, // Number of items to display on small screens
+                },
+                600: {
+                    items: 2, // Number of items to display on medium screens
+                },
+                1000: {
+                    items: 3, // Number of items to display on large screens
+                }
+            }
+        });
+
+        $(".owl-carousel-inex").owlCarousel({
+            items: 3, // Number of items to display
+            loop: true, // Infinite loop
+            margin: 10, // Margin between items
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 2000000, // Pause for 3 seconds between slides
+            autoplayHoverPause: true,
+            autoWidth:true,
+            center: true,
             responsive: {
                 0: {
                     items: 1,
