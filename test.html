@@ -1,1049 +1,1673 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonikka</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/imagesandvectors/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/imagesandvectors/logo.png"
+      type="image/x-icon"
+    />
     <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <!-- aos scrolling animation CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- general custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- hamburger custom css -->
-    <link rel="stylesheet" href="assets/css/hamburger.css">
+    <link rel="stylesheet" href="assets/css/hamburger.css" />
     <!-- fancy box css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
     <!-- owl-carousel css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <style>
-        .projects-files {
-            width: 100%;
-        }
-        .project-left.highlight+.project-right{
-            z-index: 5;
-        }
+      .projects-files {
+        width: 100%;
+      }
+      .project-left.highlight + .project-right {
+        z-index: 5;
+      }
     </style>
-</head>
+  </head>
 
-<body class="overflow-x-hidden" id="main-page">
-
+  <body class="overflow-x-hidden" id="main-page">
     <!-- for spinner -->
 
     <div class="spin" id="spinner">
-        <div class="spinner-border text-success" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
 
     <!-- for cursor-icon -->
     <div class="cursor-icon"></div>
 
-    <nav class="navbar navbar-expand-lg shadow-1" data-aos="fade-down" data-aos-duration="600">
-        <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand nav-logo d-flex align-items-center" href="index.html">
-                <img src="assets/imagesandvectors/logonew.png" alt="">
-                <p class="m-0 nav-text">Sonikka</p>
-            </a>
-            <p class="primary-text text-center secondary-color fw-700">Promoters & <br> Legal Consultants</p>
-            <button class="navbar-toggler shadow-none border-0 hamburger hamburger--spring js-hamburger collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#plans">Plans & Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#amenties">Amenties</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#recent-projects">Projects</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#location">Location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tour">Connect</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blogs</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg shadow-1"
+      data-aos="fade-down"
+      data-aos-duration="600"
+    >
+      <div class="container-fluid d-flex justify-content-between">
+        <a
+          class="navbar-brand nav-logo d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/imagesandvectors/logonew.png" alt="" />
+          <p class="m-0 nav-text">Sonikka</p>
+        </a>
+        <a
+          class="primary-text text-center secondary-color fw-700"
+          href="/index.html"
+        >
+          move to  <br />
+          Promoters
+        </a>
+        <button
+          class="navbar-toggler shadow-none border-0 hamburger hamburger--spring js-hamburger collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#plans">Plans & Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#amenties">Amenties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tour">Connect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blogs</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-
-    <section class="position-relative home" data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in-sine"
-        id="home">
-        <div id="carousel1" class="carousel slide carousel-fade h-100 mb-5 mb-lg-0" data-bs-ride="carousel">
-            <div class="carousel-inner h-100">
-                <div class="carousel-item h-100 active">
-                    <img src="assets/imagesandvectors/main-carousel/carousel-img-1.jpg" class="d-block w-100 h-100"
-                        alt="assets/imagesandvectors/main-carousel/carousel-img-1.jpg">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="assets/imagesandvectors/main-carousel/carousel-img-3.jpg" class="d-block w-100 h-100"
-                        alt="assets/imagesandvectors/main-carousel/carousel-img-2.jpg">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="assets/imagesandvectors/main-carousel/carousel-img-6.jpg" class="d-block w-100 h-100"
-                        alt="assets/imagesandvectors/main-carousel/carousel-img-3.jpg">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="https://swarajya.gumlet.io/swarajya/2019-05/e3219128-eb79-4fe7-a9a7-48eb468230ac/Chennai_Installtion.jpg"
-                        class="d-block w-100 h-100"
-                        alt="https://swarajya.gumlet.io/swarajya/2019-05/e3219128-eb79-4fe7-a9a7-48eb468230ac/Chennai_Installtion.jpg">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <section
+      class="position-relative home"
+      data-aos="fade"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-sine"
+      id="home"
+    >
+      <div
+        id="carousel1"
+        class="carousel slide carousel-fade h-100 mb-5 mb-lg-0"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner h-100">
+          <div class="carousel-item h-100 active">
+            <img
+              src="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
+              class="d-block w-100 h-100"
+              alt="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
+            />
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
+              class="d-block w-100 h-100"
+              alt="assets/imagesandvectors/main-carousel/carousel-img-2.jpg"
+            />
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="assets/imagesandvectors/main-carousel/carousel-img-6.jpg"
+              class="d-block w-100 h-100"
+              alt="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
+            />
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="https://swarajya.gumlet.io/swarajya/2019-05/e3219128-eb79-4fe7-a9a7-48eb468230ac/Chennai_Installtion.jpg"
+              class="d-block w-100 h-100"
+              alt="https://swarajya.gumlet.io/swarajya/2019-05/e3219128-eb79-4fe7-a9a7-48eb468230ac/Chennai_Installtion.jpg"
+            />
+          </div>
         </div>
-        <div class="home-card mb-5 mb-lg-0 d-none" data-aos="fade-up" data-aos-duration="800"
-            data-aos-easing="ease-in-sine">
-            <div class="card border-0 p-md-4 p-lg-5">
-                <div class="card-body p-0">
-                    <address><i class="bi bi-geo-alt-fill"></i> <span>Aragon Ave, Coral Gxxxx, FL 331xx</span></address>
-                    <div class="pe-lg-5">
-                        <h1 class="secondary-header">Gables Grand Plaza Apartments</h1>
-                        <p class="primary-text mb-3">
-                            Our premium furnished apartments feature allow you and your favorite pet to enjoy all at
-                            Gables Grand Plaza!
-                        </p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h1 class="tertary-header fw-700 m-0">$625,000</h1>
-                        <a href="#tour" class="btn1">Get in touch</a>
-                    </div>
-                </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div
+        class="home-card mb-5 mb-lg-0 d-none"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="card border-0 p-md-4 p-lg-5">
+          <div class="card-body p-0">
+            <address>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Aragon Ave, Coral Gxxxx, FL 331xx</span>
+            </address>
+            <div class="pe-lg-5">
+              <h1 class="secondary-header">Gables Grand Plaza Apartments</h1>
+              <p class="primary-text mb-3">
+                Our premium furnished apartments feature allow you and your
+                favorite pet to enjoy all at Gables Grand Plaza!
+              </p>
             </div>
-        </div>
-        <div class="home-card home-card1  mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="800"
-            data-aos-easing="ease-in-sine">
-            <div class="card border-0 p-md-4 p-lg-5">
-                <div class="card-body p-0">
-                    <h1 class="tertary-header mb-3">Meet Us</h1>
-                    <form action="">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <input type="text" class="form-control shadow-none border-0 border-bottom rounded-0"
-                                    placeholder="Enter your name" aria-label="First name">
-                            </div>
-                            <div class="col-12">
-                                <input type="email" class="form-control shadow-none border-0 border-bottom rounded-0"
-                                    placeholder="Enter your email">
-                            </div>
-                            <div class="col-12">
-                                <input type="tel" class="form-control shadow-none border-0 border-bottom rounded-0"
-                                    max="10" maxlength="10" placeholder="Enter your Mobile number">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control shadow-none border-0 border-bottom rounded-0"
-                                    placeholder="Enter your District Name">
-                            </div>
-                            <button class="col-12 btn1 d-flex align-items-center justify-content-center">Get Sonikka
-                                Designs <span class="glowing">New</span></button>
-                        </div>
-                    </form>
-                </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h1 class="tertary-header fw-700 m-0">$625,000</h1>
+              <a href="#tour" class="btn1">Get in touch</a>
             </div>
+          </div>
         </div>
+      </div>
+      <div
+        class="home-card home-card1 mb-5 mb-lg-0"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="card border-0 p-md-4 p-lg-5">
+          <div class="card-body p-0">
+            <h1 class="tertary-header mb-3">Meet Us</h1>
+            <form action="">
+              <div class="row g-4">
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control shadow-none border-0 border-bottom rounded-0"
+                    placeholder="Enter your name"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="email"
+                    class="form-control shadow-none border-0 border-bottom rounded-0"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="tel"
+                    class="form-control shadow-none border-0 border-bottom rounded-0"
+                    max="10"
+                    maxlength="10"
+                    placeholder="Enter your Mobile number"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control shadow-none border-0 border-bottom rounded-0"
+                    placeholder="Enter your District Name"
+                  />
+                </div>
+                <button
+                  class="col-12 btn1 d-flex align-items-center justify-content-center"
+                >
+                  Get Sonikka Designs <span class="glowing">New</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="features mx-3 mx-md-0 d-flex flex-column justify-content-center" id="features">
-        <div class="container-lg">
-            <div class="row justify-content-evenly align-items-center g-5">
-                <div class="col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="500"
-                    data-aos-easing="ease-in-sine">
-                    <p class="uniquetext">GREAT FEATURES
-                    </p>
-                    <h2 class="primary-header">
-                        Classic Interiors & Exteriors
-                    </h2>
-                    <p class="primary-text mb-5">
-                        Generously sized, this home delivers the very best Interiors & exteriors.
-                    </p>
-                    <a href="#tour" class="btn2">Get in touch</a>
-                </div>
-                <div class="col-lg-7 col-xl-7" data-aos="fade-right" data-aos-duration="500"
-                    data-aos-easing="ease-in-sine">
-                    <div class="in-ex-carousel">
-                        <ul class="in-ex-carousel__list">
-                            <li class="in-ex-carousel__item" data-pos="-2">
-                                <img src="https://st.hzcdn.com/simgs/pictures/living-rooms/the-inside-outside-house-amritha-karnakar-architectural-design-img~1ae111ab0c3f17dd_14-8899-1-1d14387.jpg"
-                                    alt="">
-                                <a href="https://st.hzcdn.com/simgs/pictures/living-rooms/the-inside-outside-house-amritha-karnakar-architectural-design-img~1ae111ab0c3f17dd_14-8899-1-1d14387.jpg"
-                                    class="full bi bi-fullscreen text-dark" data-fancybox="gallery7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-fullscreen" viewBox="0 0 16 16">
-                                        <path class="text-dark"
-                                            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                </a>
-
-                            </li>
-                            <li class="in-ex-carousel__item" data-pos="-1">
-                                <img src="https://st.hzcdn.com/simgs/3521f65202ce862a_14-5018/home-design.jpg" alt="">
-                                <a href="https://st.hzcdn.com/simgs/3521f65202ce862a_14-5018/home-design.jpg"
-                                    class="full bi bi-fullscreen text-dark" data-fancybox="gallery7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-fullscreen" viewBox="0 0 16 16">
-                                        <path class="text-dark"
-                                            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="in-ex-carousel__item" data-pos="0">
-                                <img src="https://st.hzcdn.com/simgs/pictures/living-rooms/house-on-manasa-hills-hyderabad-hp-lakhani-associates-img~1b613e1d09d1f3d2_14-6608-1-808d35e.jpg"
-                                    alt="">
-                                <a href="https://st.hzcdn.com/simgs/pictures/living-rooms/house-on-manasa-hills-hyderabad-hp-lakhani-associates-img~1b613e1d09d1f3d2_14-6608-1-808d35e.jpg"
-                                    class="full bi bi-fullscreen text-dark" data-fancybox="gallery7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-fullscreen" viewBox="0 0 16 16">
-                                        <path class="text-dark"
-                                            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="in-ex-carousel__item" data-pos="1">
-                                <img src="https://st.hzcdn.com/simgs/pictures/living-rooms/living-room-the-raj-company-img~add109590368be46_14-9245-1-d19513f.jpg"
-                                    alt="">
-                                <a href="https://st.hzcdn.com/simgs/pictures/living-rooms/living-room-the-raj-company-img~add109590368be46_14-9245-1-d19513f.jpg"
-                                    class="full bi bi-fullscreen text-dark" data-fancybox="gallery7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-fullscreen" viewBox="0 0 16 16">
-                                        <path class="text-dark"
-                                            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="in-ex-carousel__item" data-pos="2">
-                                <img src="assets/imagesandvectors/main-carousel/carousel-img-4.jpg" alt="">
-                                <a href="assets/imagesandvectors/main-carousel/carousel-img-4.jpg"
-                                    class="full bi bi-fullscreen text-dark" data-fancybox="gallery7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-fullscreen" viewBox="0 0 16 16">
-                                        <path class="text-dark"
-                                            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col pt-5">
-                    <div class="row gy-5 gy-md-0 text-center">
-                        <div class="col-lg-12 col-12" data-aos="fade-up" data-aos-duration="500"
-                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                            <div class="row align-items-center g-3">
-                                <div class="col-md-6">
-                                    <div class="mb-2">
-                                        <img src="assets/imagesandvectors/features/home.png" class="feature-img mx-auto"
-                                            alt="assets/imagesandvectors/features/home">
-                                    </div>
-                                    <h1 class="quartary-header">Latest Property</h1>
-                                    <p class="primary-text">Tasteful and seem-less renovation, this home is a
-                                        unique
-                                        refreshing.</p>
-                                </div>
-                                <div class="col-md-6 p-md-0">
-                                    <div id="carousel3" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                                        data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                                        <div class="carousel-inner rounded-2">
-                                            <div class="carousel-item active">
-                                                <a href="https://st.hzcdn.com/simgs/3561360c006fde57_14-9845/home-design.jpg"
-                                                    data-fancybox="gallery6">
-                                                    <img src="https://st.hzcdn.com/simgs/3561360c006fde57_14-9845/home-design.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://st.hzcdn.com/simgs/3561360c006fde57_14-9845/home-design.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://st.hzcdn.com/simgs/85f19e9c05716afe_14-1781/home-design.jpg"
-                                                    data-fancybox="gallery6">
-                                                    <img src="https://st.hzcdn.com/simgs/85f19e9c05716afe_14-1781/home-design.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://st.hzcdn.com/simgs/85f19e9c05716afe_14-1781/home-design.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://st.hzcdn.com/simgs/24b16675040df11c_14-5303/home-design.jpg"
-                                                    data-fancybox="gallery6">
-                                                    <img src="https://st.hzcdn.com/simgs/24b16675040df11c_14-5303/home-design.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://st.hzcdn.com/simgs/24b16675040df11c_14-5303/home-design.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://st.hzcdn.com/simgs/6aa1ab6900b1f89e_14-4105/home-design.jpg"
-                                                    data-fancybox="gallery6">
-                                                    <img src="https://st.hzcdn.com/simgs/6aa1ab6900b1f89e_14-4105/home-design.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://st.hzcdn.com/simgs/6aa1ab6900b1f89e_14-4105/home-design.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://st.hzcdn.com/simgs/37e1bd44006702f8_14-5316/home-design.jpg"
-                                                    data-fancybox="gallery6">
-                                                    <img src="https://st.hzcdn.com/simgs/37e1bd44006702f8_14-5316/home-design.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://st.hzcdn.com/simgs/37e1bd44006702f8_14-5316/home-design.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
-                                            data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
-                                            data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12" data-aos="fade-up" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                            <div class="row align-items-center g-3">
-                                <div class="col-md-6 p-md-0">
-                                    <div id="carousel4" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                                        data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                                        <div class="carousel-inner rounded-2">
-                                            <div class="carousel-item active">
-                                                <a href="https://cdn.pixabay.com/photo/2018/03/20/11/54/sky-3243038_1280.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://cdn.pixabay.com/photo/2018/03/20/11/54/sky-3243038_1280.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://cdn.pixabay.com/photo/2018/03/20/11/54/sky-3243038_1280.jpg">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5 class="mb-0">Besant Nagar Beach</h5>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://cdn.pixabay.com/photo/2018/03/19/12/44/reflection-3239899_1280.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://cdn.pixabay.com/photo/2018/03/19/12/44/reflection-3239899_1280.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://cdn.pixabay.com/photo/2018/03/19/12/44/reflection-3239899_1280.jpg">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5 class="mb-0">Napier Bridge</h5>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://image3.mouthshut.com/images/imagesp/925043598s.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://image3.mouthshut.com/images/imagesp/925043598s.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://image3.mouthshut.com/images/imagesp/925043598s.jpg">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5 class="mb-0">Yelagri Hills</h5>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
-                                            data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
-                                            data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-2">
-                                        <img src="assets/imagesandvectors/features/checked.png"
-                                            class="feature-img mx-auto" alt="assets/imagesandvectors/features/home">
-                                    </div>
-                                    <h1 class="quartary-header">Awesome Area</h1>
-                                    <p class="primary-text">This suite offers outstanding views of the city,
-                                        ocean and
-                                        mountains.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12" data-aos="fade-up" data-aos-duration="500"
-                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                            <div class="row align-items-center g-3">
-                                <div class="col-md-6">
-                                    <div class="mb-2">
-                                        <img src="assets/imagesandvectors/features/earth.png"
-                                            class="feature-img mx-auto" alt="assets/imagesandvectors/features/home">
-                                    </div>
-                                    <h1 class="quartary-header">Great Surroundings</h1>
-                                    <p class="primary-text">Coral Gables provides a coastal lifestyle in a tropical
-                                        setting.</p>
-                                </div>
-                                <div class="col-md-6 p-md-0">
-                                    <div id="carousel5" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                                        data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                                        <div class="carousel-inner rounded-2">
-                                            <div class="carousel-item active">
-                                                <a href="https://vrchennai.com/UploadFile/homeBanners/VRC_Facade.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://vrchennai.com/UploadFile/homeBanners/VRC_Facade.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://vrchennai.com/UploadFile/homeBanners/VRC_Facade.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://assets.telegraphindia.com/telegraph/2023/Jan/1674024326_pvr.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://assets.telegraphindia.com/telegraph/2023/Jan/1674024326_pvr.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://assets.telegraphindia.com/telegraph/2023/Jan/1674024326_pvr.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://lh3.googleusercontent.com/p/AF1QipPYiEEX9QnIuMDWKtLzgi331uTnxmnPOM7UXEGX=s1360-w1360-h1020"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://lh3.googleusercontent.com/p/AF1QipPYiEEX9QnIuMDWKtLzgi331uTnxmnPOM7UXEGX=s1360-w1360-h1020"
-                                                        class="d-block w-100"
-                                                        alt="https://lh3.googleusercontent.com/p/AF1QipPYiEEX9QnIuMDWKtLzgi331uTnxmnPOM7UXEGX=s1360-w1360-h1020">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
-                                            data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
-                                            data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-12" data-aos="fade-up" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                            <div class="row align-items-center g-3">
-                                <div class="col-md-6 p-md-0">
-                                    <div id="carousel6" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                                        data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                                        <div class="carousel-inner rounded-2">
-                                            <div class="carousel-item active">
-                                                <a href="https://www.mypropertyboutique.com/uploads/page_image/images/Poes%20Garden.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://www.mypropertyboutique.com/uploads/page_image/images/Poes%20Garden.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://www.mypropertyboutique.com/uploads/page_image/images/Poes%20Garden.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://www.nobroker.in/blog/wp-content/uploads/2021/10/Boat-Club.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://www.nobroker.in/blog/wp-content/uploads/2021/10/Boat-Club.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://www.nobroker.in/blog/wp-content/uploads/2021/10/Boat-Club.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <a href="https://sesamegreenbeans.com/wp-content/uploads/2020/07/eastcoastroad.jpg"
-                                                    data-fancybox="gallery1">
-                                                    <img src="https://sesamegreenbeans.com/wp-content/uploads/2020/07/eastcoastroad.jpg"
-                                                        class="d-block w-100"
-                                                        alt="https://sesamegreenbeans.com/wp-content/uploads/2020/07/eastcoastroad.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
-                                            data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
-                                            data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-2">
-                                        <img src="assets/imagesandvectors/features/diamond.png"
-                                            class="feature-img mx-auto" alt="assets/imagesandvectors/features/home">
-                                    </div>
-                                    <h1 class="quartary-header">Supreme Location</h1>
-                                    <p class="primary-text">It is ideally situated on a very private lot along a whisper
-                                        quiet street.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section
+      class="features mx-3 mx-md-0 d-flex flex-column justify-content-center"
+      id="features"
+    >
+      <div class="container-lg">
+        <div class="row justify-content-evenly align-items-center g-5">
+          <div
+            class="col-lg-5 col-xl-4"
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <p class="uniquetext">GREAT FEATURES</p>
+            <h2 class="primary-header">Classic Interiors & Exteriors</h2>
+            <p class="primary-text mb-5">
+              Generously sized, this home delivers the very best Interiors &
+              exteriors.
+            </p>
+            <a href="#tour" class="btn2">Get in touch</a>
+          </div>
+          <div
+            class="col-lg-7 col-xl-7"
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="in-ex-carousel">
+              <ul class="in-ex-carousel__list">
+                <li class="in-ex-carousel__item" data-pos="-2">
+                  <img
+                    src="https://st.hzcdn.com/simgs/pictures/living-rooms/the-inside-outside-house-amritha-karnakar-architectural-design-img~1ae111ab0c3f17dd_14-8899-1-1d14387.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://st.hzcdn.com/simgs/pictures/living-rooms/the-inside-outside-house-amritha-karnakar-architectural-design-img~1ae111ab0c3f17dd_14-8899-1-1d14387.jpg"
+                    class="full bi bi-fullscreen text-dark"
+                    data-fancybox="gallery7"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-fullscreen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="text-dark"
+                        d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="in-ex-carousel__item" data-pos="-1">
+                  <img
+                    src="https://st.hzcdn.com/simgs/3521f65202ce862a_14-5018/home-design.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://st.hzcdn.com/simgs/3521f65202ce862a_14-5018/home-design.jpg"
+                    class="full bi bi-fullscreen text-dark"
+                    data-fancybox="gallery7"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-fullscreen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="text-dark"
+                        d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="in-ex-carousel__item" data-pos="0">
+                  <img
+                    src="https://st.hzcdn.com/simgs/pictures/living-rooms/house-on-manasa-hills-hyderabad-hp-lakhani-associates-img~1b613e1d09d1f3d2_14-6608-1-808d35e.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://st.hzcdn.com/simgs/pictures/living-rooms/house-on-manasa-hills-hyderabad-hp-lakhani-associates-img~1b613e1d09d1f3d2_14-6608-1-808d35e.jpg"
+                    class="full bi bi-fullscreen text-dark"
+                    data-fancybox="gallery7"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-fullscreen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="text-dark"
+                        d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="in-ex-carousel__item" data-pos="1">
+                  <img
+                    src="https://st.hzcdn.com/simgs/pictures/living-rooms/living-room-the-raj-company-img~add109590368be46_14-9245-1-d19513f.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="https://st.hzcdn.com/simgs/pictures/living-rooms/living-room-the-raj-company-img~add109590368be46_14-9245-1-d19513f.jpg"
+                    class="full bi bi-fullscreen text-dark"
+                    data-fancybox="gallery7"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-fullscreen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="text-dark"
+                        d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="in-ex-carousel__item" data-pos="2">
+                  <img
+                    src="assets/imagesandvectors/main-carousel/carousel-img-4.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="assets/imagesandvectors/main-carousel/carousel-img-4.jpg"
+                    class="full bi bi-fullscreen text-dark"
+                    data-fancybox="gallery7"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-fullscreen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="text-dark"
+                        d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5M.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col pt-5">
+            <div class="row gy-5 gy-md-0 text-center">
+              <div
+                class="col-lg-12 col-12"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <div class="row align-items-center g-3">
+                  <div class="col-md-6">
+                    <div class="mb-2">
+                      <img
+                        src="assets/imagesandvectors/features/home.png"
+                        class="feature-img mx-auto"
+                        alt="assets/imagesandvectors/features/home"
+                      />
+                    </div>
+                    <h1 class="quartary-header">Latest Property</h1>
+                    <p class="primary-text">
+                      Tasteful and seem-less renovation, this home is a unique
+                      refreshing.
+                    </p>
+                  </div>
+                  <div class="col-md-6 p-md-0">
+                    <div
+                      id="carousel3"
+                      class="carousel slide carousel-fade"
+                      data-bs-ride="carousel"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <div class="carousel-inner rounded-2">
+                        <div class="carousel-item active">
+                          <a
+                            href="https://st.hzcdn.com/simgs/3561360c006fde57_14-9845/home-design.jpg"
+                            data-fancybox="gallery6"
+                          >
+                            <img
+                              src="https://st.hzcdn.com/simgs/3561360c006fde57_14-9845/home-design.jpg"
+                              class="d-block w-100"
+                              alt="https://st.hzcdn.com/simgs/3561360c006fde57_14-9845/home-design.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://st.hzcdn.com/simgs/85f19e9c05716afe_14-1781/home-design.jpg"
+                            data-fancybox="gallery6"
+                          >
+                            <img
+                              src="https://st.hzcdn.com/simgs/85f19e9c05716afe_14-1781/home-design.jpg"
+                              class="d-block w-100"
+                              alt="https://st.hzcdn.com/simgs/85f19e9c05716afe_14-1781/home-design.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://st.hzcdn.com/simgs/24b16675040df11c_14-5303/home-design.jpg"
+                            data-fancybox="gallery6"
+                          >
+                            <img
+                              src="https://st.hzcdn.com/simgs/24b16675040df11c_14-5303/home-design.jpg"
+                              class="d-block w-100"
+                              alt="https://st.hzcdn.com/simgs/24b16675040df11c_14-5303/home-design.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://st.hzcdn.com/simgs/6aa1ab6900b1f89e_14-4105/home-design.jpg"
+                            data-fancybox="gallery6"
+                          >
+                            <img
+                              src="https://st.hzcdn.com/simgs/6aa1ab6900b1f89e_14-4105/home-design.jpg"
+                              class="d-block w-100"
+                              alt="https://st.hzcdn.com/simgs/6aa1ab6900b1f89e_14-4105/home-design.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://st.hzcdn.com/simgs/37e1bd44006702f8_14-5316/home-design.jpg"
+                            data-fancybox="gallery6"
+                          >
+                            <img
+                              src="https://st.hzcdn.com/simgs/37e1bd44006702f8_14-5316/home-design.jpg"
+                              class="d-block w-100"
+                              alt="https://st.hzcdn.com/simgs/37e1bd44006702f8_14-5316/home-design.jpg"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel3"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel3"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 col-12"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-sine"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <div class="row align-items-center g-3">
+                  <div class="col-md-6 p-md-0">
+                    <div
+                      id="carousel4"
+                      class="carousel slide carousel-fade"
+                      data-bs-ride="carousel"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <div class="carousel-inner rounded-2">
+                        <div class="carousel-item active">
+                          <a
+                            href="https://cdn.pixabay.com/photo/2018/03/20/11/54/sky-3243038_1280.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://cdn.pixabay.com/photo/2018/03/20/11/54/sky-3243038_1280.jpg"
+                              class="d-block w-100"
+                              alt="https://cdn.pixabay.com/photo/2018/03/20/11/54/sky-3243038_1280.jpg"
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="mb-0">Besant Nagar Beach</h5>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://cdn.pixabay.com/photo/2018/03/19/12/44/reflection-3239899_1280.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://cdn.pixabay.com/photo/2018/03/19/12/44/reflection-3239899_1280.jpg"
+                              class="d-block w-100"
+                              alt="https://cdn.pixabay.com/photo/2018/03/19/12/44/reflection-3239899_1280.jpg"
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="mb-0">Napier Bridge</h5>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://image3.mouthshut.com/images/imagesp/925043598s.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://image3.mouthshut.com/images/imagesp/925043598s.jpg"
+                              class="d-block w-100"
+                              alt="https://image3.mouthshut.com/images/imagesp/925043598s.jpg"
+                            />
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="mb-0">Yelagri Hills</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel4"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel4"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-2">
+                      <img
+                        src="assets/imagesandvectors/features/checked.png"
+                        class="feature-img mx-auto"
+                        alt="assets/imagesandvectors/features/home"
+                      />
+                    </div>
+                    <h1 class="quartary-header">Awesome Area</h1>
+                    <p class="primary-text">
+                      This suite offers outstanding views of the city, ocean and
+                      mountains.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 col-12"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <div class="row align-items-center g-3">
+                  <div class="col-md-6">
+                    <div class="mb-2">
+                      <img
+                        src="assets/imagesandvectors/features/earth.png"
+                        class="feature-img mx-auto"
+                        alt="assets/imagesandvectors/features/home"
+                      />
+                    </div>
+                    <h1 class="quartary-header">Great Surroundings</h1>
+                    <p class="primary-text">
+                      Coral Gables provides a coastal lifestyle in a tropical
+                      setting.
+                    </p>
+                  </div>
+                  <div class="col-md-6 p-md-0">
+                    <div
+                      id="carousel5"
+                      class="carousel slide carousel-fade"
+                      data-bs-ride="carousel"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <div class="carousel-inner rounded-2">
+                        <div class="carousel-item active">
+                          <a
+                            href="https://vrchennai.com/UploadFile/homeBanners/VRC_Facade.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://vrchennai.com/UploadFile/homeBanners/VRC_Facade.jpg"
+                              class="d-block w-100"
+                              alt="https://vrchennai.com/UploadFile/homeBanners/VRC_Facade.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://assets.telegraphindia.com/telegraph/2023/Jan/1674024326_pvr.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://assets.telegraphindia.com/telegraph/2023/Jan/1674024326_pvr.jpg"
+                              class="d-block w-100"
+                              alt="https://assets.telegraphindia.com/telegraph/2023/Jan/1674024326_pvr.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://lh3.googleusercontent.com/p/AF1QipPYiEEX9QnIuMDWKtLzgi331uTnxmnPOM7UXEGX=s1360-w1360-h1020"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://lh3.googleusercontent.com/p/AF1QipPYiEEX9QnIuMDWKtLzgi331uTnxmnPOM7UXEGX=s1360-w1360-h1020"
+                              class="d-block w-100"
+                              alt="https://lh3.googleusercontent.com/p/AF1QipPYiEEX9QnIuMDWKtLzgi331uTnxmnPOM7UXEGX=s1360-w1360-h1020"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel5"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel5"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 col-12"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-sine"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <div class="row align-items-center g-3">
+                  <div class="col-md-6 p-md-0">
+                    <div
+                      id="carousel6"
+                      class="carousel slide carousel-fade"
+                      data-bs-ride="carousel"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <div class="carousel-inner rounded-2">
+                        <div class="carousel-item active">
+                          <a
+                            href="https://www.mypropertyboutique.com/uploads/page_image/images/Poes%20Garden.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://www.mypropertyboutique.com/uploads/page_image/images/Poes%20Garden.jpg"
+                              class="d-block w-100"
+                              alt="https://www.mypropertyboutique.com/uploads/page_image/images/Poes%20Garden.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://www.nobroker.in/blog/wp-content/uploads/2021/10/Boat-Club.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://www.nobroker.in/blog/wp-content/uploads/2021/10/Boat-Club.jpg"
+                              class="d-block w-100"
+                              alt="https://www.nobroker.in/blog/wp-content/uploads/2021/10/Boat-Club.jpg"
+                            />
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://sesamegreenbeans.com/wp-content/uploads/2020/07/eastcoastroad.jpg"
+                            data-fancybox="gallery1"
+                          >
+                            <img
+                              src="https://sesamegreenbeans.com/wp-content/uploads/2020/07/eastcoastroad.jpg"
+                              class="d-block w-100"
+                              alt="https://sesamegreenbeans.com/wp-content/uploads/2020/07/eastcoastroad.jpg"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel6"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel6"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-2">
+                      <img
+                        src="assets/imagesandvectors/features/diamond.png"
+                        class="feature-img mx-auto"
+                        alt="assets/imagesandvectors/features/home"
+                      />
+                    </div>
+                    <h1 class="quartary-header">Supreme Location</h1>
+                    <p class="primary-text">
+                      It is ideally situated on a very private lot along a
+                      whisper quiet street.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="about text-center gap" data-aos="fade" id="about">
-        <div class="container">
-            <div class="row justify-content-center g-3">
-                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-duration="400"
-                    data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title primary-header card1-header mb-2">3560</h4>
-                            <p class="secondary-color card-text1"> Square feet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title primary-header card1-header mb-2">2</h4>
-                            <p class="secondary-color card-text1"> Bedrooms</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-duration="600"
-                    data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title primary-header card1-header mb-2">2</h4>
-                            <p class="secondary-color card-text1"> Bathrooms</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-duration="700"
-                    data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title primary-header card1-header mb-2">2021</h4>
-                            <p class="secondary-color card-text1"> Year Built</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-duration="900"
-                    data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title primary-header card1-header mb-2">2</h4>
-                            <p class="secondary-color card-text1"> Car Parking</p>
-                        </div>
-                    </div>
-                </div>
-
+      <div class="container">
+        <div class="row justify-content-center g-3">
+          <div
+            class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-easing="ease-in-sine"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title primary-header card1-header mb-2">
+                  3560
+                </h4>
+                <p class="secondary-color card-text1">Square feet</p>
+              </div>
             </div>
+          </div>
+          <div
+            class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title primary-header card1-header mb-2">2</h4>
+                <p class="secondary-color card-text1">Bedrooms</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title primary-header card1-header mb-2">2</h4>
+                <p class="secondary-color card-text1">Bathrooms</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title primary-header card1-header mb-2">
+                  2021
+                </h4>
+                <p class="secondary-color card-text1">Year Built</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title primary-header card1-header mb-2">2</h4>
+                <p class="secondary-color card-text1">Car Parking</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <section class="plans overflow-hidden py-5" id="plans">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="primary-header mb-2" data-aos="fade-up" data-aos-duration="600">Floor Plans</h1>
-                <p class="primary-text mb-5" data-aos="fade-up" data-aos-duration="700">
-                    Amazingly Constructed and Well Maintained Spaces</p>
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h1
+            class="primary-header mb-2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            Floor Plans
+          </h1>
+          <p
+            class="primary-text mb-5"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            Amazingly Constructed and Well Maintained Spaces
+          </p>
         </div>
+      </div>
     </section>
-
 
     <section class="recent common-padding" id="recent-projects">
-        <div class="container">
-            <audio src="assets/sounds/click2.mp3" id="myaudio"></audio>
-            <div class="projects row justify-content-center position-relative">
-                <div class="col-lg-6 project-left">
-                    <div class="sticky">
-                        <h1 class="projects-header">
-                            Main Area
-                        </h1>
-                        <p class="primary-text mb-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsa illum, quos
-                            laboriosam
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-right">
-                    <div class="projects-files">
-                        <video href="assets/videos/video1.webm" data-fancybox="gallery5" muted loop
-                            src="assets/videos/video1.webm">
-                        </video>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-left">
-                    <div class="sticky">
-                        <h1 class="projects-header">
-                            Living Area 1
-                        </h1>
-                        <p class="primary-text mb-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsa illum, quos
-                            laboriosam
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-right">
-                    <div class="projects-files">
-                        <video muted loop src="assets/videos/vid2.mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-left">
-                    <div class="sticky">
-                        <h1 class="projects-header">
-                            Arabic Kitchen
-                        </h1>
-                        <p class="primary-text mb-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsa illum, quos
-                            laboriosam
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-right">
-                    <div class="projects-files">
-                        <video muted loop src="assets/videos/vid3.mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-left">
-                    <div class="sticky">
-                        <h1 class="projects-header">
-                            Spanish Kitchen
-                        </h1>
-                        <p class="primary-text mb-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsa illum, quos
-                            laboriosam
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-right">
-                    <div class="projects-files">
-                        <video muted loop src="assets/videos/vid4.mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-left">
-                    <div class="sticky">
-                        <h1 class="projects-header">
-                            Living Area 2
-                        </h1>
-                        <p class="primary-text mb-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsa illum, quos
-                            laboriosam
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-right">
-                    <div class="projects-files">
-                        <video muted loop src="assets/videos/vid5.mp4">
-                        </video>
-                    </div>
-                </div>
+      <div class="container">
+        <audio src="assets/sounds/click2.mp3" id="myaudio"></audio>
+        <div class="projects row justify-content-center position-relative">
+          <div class="col-lg-6 project-left">
+            <div class="sticky">
+              <h1 class="projects-header">Main Area</h1>
+              <p class="primary-text mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa illum, quos laboriosam
+              </p>
             </div>
+          </div>
+          <div class="col-lg-6 project-right">
+            <div class="projects-files">
+              <video
+                href="assets/videos/video1.webm"
+                data-fancybox="gallery5"
+                muted
+                loop
+                src="assets/videos/video1.webm"
+              ></video>
+            </div>
+          </div>
+          <div class="col-lg-6 project-left">
+            <div class="sticky">
+              <h1 class="projects-header">Living Area 1</h1>
+              <p class="primary-text mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa illum, quos laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 project-right">
+            <div class="projects-files">
+              <video muted loop src="assets/videos/vid2.mp4"></video>
+            </div>
+          </div>
+          <div class="col-lg-6 project-left">
+            <div class="sticky">
+              <h1 class="projects-header">Arabic Kitchen</h1>
+              <p class="primary-text mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa illum, quos laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 project-right">
+            <div class="projects-files">
+              <video muted loop src="assets/videos/vid3.mp4"></video>
+            </div>
+          </div>
+          <div class="col-lg-6 project-left">
+            <div class="sticky">
+              <h1 class="projects-header">Spanish Kitchen</h1>
+              <p class="primary-text mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa illum, quos laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 project-right">
+            <div class="projects-files">
+              <video muted loop src="assets/videos/vid4.mp4"></video>
+            </div>
+          </div>
+          <div class="col-lg-6 project-left">
+            <div class="sticky">
+              <h1 class="projects-header">Living Area 2</h1>
+              <p class="primary-text mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa illum, quos laboriosam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 project-right">
+            <div class="projects-files">
+              <video muted loop src="assets/videos/vid5.mp4"></video>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
     <section class="amenties overflow-hidden common-padding" id="amenties">
-        <div class="container">
-            <div class="row d-flex align-items-center justify-content-center g-5">
-                <div class="col-lg-5 col-xl-4">
-                    <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                        data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine" x`x>
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner rounded-3">
-                            <div class="carousel-item active">
-                                <a href="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
-                                    data-fancybox="gallery1">
-                                    <img src="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
-                                        class="d-block w-100"
-                                        alt="assets/imagesandvectors/main-carousel/carousel-img-1.jpg">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="assets/imagesandvectors/main-carousel/carousel-img-2.jpg"
-                                    data-fancybox="gallery1">
-                                    <img src="assets/imagesandvectors/main-carousel/carousel-img-2.jpg"
-                                        class="d-block w-100"
-                                        alt="assets/imagesandvectors/main-carousel/carousel-img-2.jpg">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
-                                    data-fancybox="gallery1">
-                                    <img src="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
-                                        class="d-block w-100"
-                                        alt="assets/imagesandvectors/main-carousel/carousel-img-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center g-5">
+          <div class="col-lg-5 col-xl-4">
+            <div
+              id="carousel2"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine"
+              x`x
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                  <a
+                    href="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img
+                      src="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
+                      class="d-block w-100"
+                      alt="assets/imagesandvectors/main-carousel/carousel-img-1.jpg"
+                    />
+                  </a>
                 </div>
-                <div class="py-2 col-lg-6 amenities-right">
-                    <h1 class="primary-header" data-aos="fade-up" data-aos-duration="600">Amenities</h1>
-                    <p class="primary-text mb-4" data-aos="fade-up" data-aos-duration="700">In property and land use
-                        planning, amenity is something considered to
-                        benefit a location, contribute to its enjoyment, and thereby increase its value.</p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="400"><i
-                                    class="bi bi-check-lg"></i> Clubhouse</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="500"><i
-                                    class="bi bi-check-lg"></i> Fitness Center</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="600"><i
-                                    class="bi bi-check-lg"></i> Gated</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="700"><i
-                                    class="bi bi-check-lg"></i> Courtyard</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="800"><i
-                                    class="bi bi-check-lg"></i> Central Heating</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="900"><i
-                                    class="bi bi-check-lg"></i> Air Conditioning</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="1000"><i
-                                    class="bi bi-check-lg"></i> Free WiFi</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="1100"><i
-                                    class="bi bi-check-lg"></i> Theater</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="400"><i
-                                    class="bi bi-check-lg"></i> Online Services</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="500"><i
-                                    class="bi bi-check-lg"></i> Health Club Discount</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="600"><i
-                                    class="bi bi-check-lg"></i> Elevator</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="700"><i
-                                    class="bi bi-check-lg"></i> Business Center</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="800"><i
-                                    class="bi bi-check-lg"></i> Alarm System</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="900"><i
-                                    class="bi bi-check-lg"></i> Car Parking</p>
-                            <p class="amni-text" data-aos="fade-up" data-aos-duration="1000"><i
-                                    class="bi bi-check-lg"></i> Greenbelt</p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="#tour" data-aos="fade-up" data-aos-duration="600" class="btn2">Know more</a>
-                    </div>
+                <div class="carousel-item">
+                  <a
+                    href="assets/imagesandvectors/main-carousel/carousel-img-2.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img
+                      src="assets/imagesandvectors/main-carousel/carousel-img-2.jpg"
+                      class="d-block w-100"
+                      alt="assets/imagesandvectors/main-carousel/carousel-img-2.jpg"
+                    />
+                  </a>
                 </div>
+                <div class="carousel-item">
+                  <a
+                    href="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img
+                      src="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
+                      class="d-block w-100"
+                      alt="assets/imagesandvectors/main-carousel/carousel-img-3.jpg"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="py-2 col-lg-6 amenities-right">
+            <h1
+              class="primary-header"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              Amenities
+            </h1>
+            <p
+              class="primary-text mb-4"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              In property and land use planning, amenity is something considered
+              to benefit a location, contribute to its enjoyment, and thereby
+              increase its value.
+            </p>
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="400">
+                  <i class="bi bi-check-lg"></i> Clubhouse
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="500">
+                  <i class="bi bi-check-lg"></i> Fitness Center
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="600">
+                  <i class="bi bi-check-lg"></i> Gated
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="700">
+                  <i class="bi bi-check-lg"></i> Courtyard
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="800">
+                  <i class="bi bi-check-lg"></i> Central Heating
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="900">
+                  <i class="bi bi-check-lg"></i> Air Conditioning
+                </p>
+                <p
+                  class="amni-text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <i class="bi bi-check-lg"></i> Free WiFi
+                </p>
+                <p
+                  class="amni-text"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <i class="bi bi-check-lg"></i> Theater
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="400">
+                  <i class="bi bi-check-lg"></i> Online Services
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="500">
+                  <i class="bi bi-check-lg"></i> Health Club Discount
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="600">
+                  <i class="bi bi-check-lg"></i> Elevator
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="700">
+                  <i class="bi bi-check-lg"></i> Business Center
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="800">
+                  <i class="bi bi-check-lg"></i> Alarm System
+                </p>
+                <p class="amni-text" data-aos="fade-up" data-aos-duration="900">
+                  <i class="bi bi-check-lg"></i> Car Parking
+                </p>
+                <p
+                  class="amni-text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <i class="bi bi-check-lg"></i> Greenbelt
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a
+                href="#tour"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                class="btn2"
+                >Know more</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="gallery common-padding" id="gallery">
-        <div class="text-center">
-            <h1 class="primary-header mb-2" data-aos="fade-up" data-aos-duration="600">Property Photo Gallery</h1>
-            <p class="primary-text mb-5" data-aos="fade-up" data-aos-duration="700">
-                Elegantly Decorated Home With Iconic Views</p>
+      <div class="text-center">
+        <h1
+          class="primary-header mb-2"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          Property Photo Gallery
+        </h1>
+        <p class="primary-text mb-5" data-aos="fade-up" data-aos-duration="700">
+          Elegantly Decorated Home With Iconic Views
+        </p>
+      </div>
+      <div class="gallery-cards-holder d-flex flex-wrap">
+        <div class="gallery-cards" data-aos="zoom-in" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </a>
         </div>
-        <div class="gallery-cards-holder d-flex flex-wrap">
-            <div class="gallery-cards" data-aos="zoom-in" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/2343466/pexels-photo-2343466.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/2343466/pexels-photo-2343466.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
-            <div class="gallery-cards" data-aos="zoom-in">
-                <a href="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    data-fancybox="gallery2">
-                    <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="">
-                </a>
-            </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
         </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=600"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/2343466/pexels-photo-2343466.jpeg?auto=compress&cs=tinysrgb&w=600"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/2343466/pexels-photo-2343466.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="gallery-cards" data-aos="zoom-in">
+          <a
+            href="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-fancybox="gallery2"
+          >
+            <img
+              src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="common-padding" id="location">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="primary-header mb-2" data-aos="fade-up" data-aos-duration="600">Boasting A Superb
-                    Location
-                </h1>
-                <p class="primary-text mb-5" data-aos="fade-up" data-aos-duration="700">
-                    A Dream Location Packed With Potential</p>
-            </div>
-            <div class="row align-items-center g-5">
-                <div class="col-md-7">
-                    <div class="map" data-aos="zoom-in" data-aos-duration="600"
-                        data-aos-anchor-placement="bottom-bottom">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954624.5285352035!2d74.41666587525829!3d14.54553721729417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d48aabc65c1%3A0x6f54da323bd9c8d0!2sATIT!5e0!3m2!1sen!2sin!4v1701337126745!5m2!1sen!2sin"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card  border-0 justify-content-center align-items-center align-items-md-center">
-                            <div class="d-inline-block py-3 px-5 shadow-1 text-center col-10">
-                                <h4 class="new-header text-dark mb-2" style="color: black;">Visit Us</h4>
-                                <p class="primary-text text-dark"> Aragon Ave, Coral Gables, FL 33134</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h1
+            class="primary-header mb-2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            Boasting A Superb Location
+          </h1>
+          <p
+            class="primary-text mb-5"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            A Dream Location Packed With Potential
+          </p>
         </div>
+        <div class="row align-items-center g-5">
+          <div class="col-md-7">
+            <div
+              class="map"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954624.5285352035!2d74.41666587525829!3d14.54553721729417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d48aabc65c1%3A0x6f54da323bd9c8d0!2sATIT!5e0!3m2!1sen!2sin!4v1701337126745!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <div
+                class="card border-0 justify-content-center align-items-center align-items-md-center"
+              >
+                <div
+                  class="d-inline-block py-3 px-5 shadow-1 text-center col-10"
+                >
+                  <h4 class="new-header text-dark mb-2" style="color: black">
+                    Visit Us
+                  </h4>
+                  <p class="primary-text text-dark">
+                    Aragon Ave, Coral Gables, FL 33134
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="tour overflow-hidden common-padding" id="tour">
-        <div class="background"></div>
-        <div class="container">
-            <div class="text-center">
-                <h1 class="primary-header mb-2 text-light" data-aos="fade-up" data-aos-duration="600">Connect With Us
-                </h1>
-                <p class="primary-text mb-5 text-light" data-aos="fade-up" data-aos-duration="700">
-                    Get in Touch With Us for Any Questions & Help
-                </p>
-            </div>
-            <div class="tourForm p-4 my-5 rounded-4" data-aos="flip-left" data-aos-duration="600">
-                <form id="contactForm">
-                    <div class="row justify-content-center align-items-center gy-4 gy-md-0">
-                        <div
-                            class="d-flex flex-wrap flex-wrap flex-md-nowrap col-lg-6 justify-content-md-center align-items-end py-md-4">
-                            <label for="name" class="quartary-header mb-0">Hey my name is</label>
-                            <input type="text" id="name" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
-                                required>
-                        </div>
-                        <div
-                            class="d-flex flex-wrap flex-wrap flex-md-nowrap col-lg-6 justify-content-md-center align-items-end py-md-4">
-                            <label for="phone" class="quartary-header mb-0">and my phone is</label>
-                            <input type="tel" id="phone" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
-                                maxlength="10" pattern="[0-9]{10}" title="Please enter a 10-digit number" required>
-                        </div>
-                        <div
-                            class="d-flex flex-wrap flex-wrap flex-md-nowrap col-12 justify-content-md-center align-items-end py-md-4">
-                            <label for="email" class="quartary-header mb-0">and my email is</label>
-                            <input type="email" id="email" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
-                                required>
-                        </div>
+      <div class="background"></div>
+      <div class="container">
+        <div class="text-center">
+          <h1
+            class="primary-header mb-2 text-light"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            Connect With Us
+          </h1>
+          <p
+            class="primary-text mb-5 text-light"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            Get in Touch With Us for Any Questions & Help
+          </p>
+        </div>
+        <div
+          class="tourForm p-4 my-5 rounded-4"
+          data-aos="flip-left"
+          data-aos-duration="600"
+        >
+          <form id="contactForm">
+            <div
+              class="row justify-content-center align-items-center gy-4 gy-md-0"
+            >
+              <div
+                class="d-flex flex-wrap flex-wrap flex-md-nowrap col-lg-6 justify-content-md-center align-items-end py-md-4"
+              >
+                <label for="name" class="quartary-header mb-0"
+                  >Hey my name is</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                  required
+                />
+              </div>
+              <div
+                class="d-flex flex-wrap flex-wrap flex-md-nowrap col-lg-6 justify-content-md-center align-items-end py-md-4"
+              >
+                <label for="phone" class="quartary-header mb-0"
+                  >and my phone is</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                  maxlength="10"
+                  pattern="[0-9]{10}"
+                  title="Please enter a 10-digit number"
+                  required
+                />
+              </div>
+              <div
+                class="d-flex flex-wrap flex-wrap flex-md-nowrap col-12 justify-content-md-center align-items-end py-md-4"
+              >
+                <label for="email" class="quartary-header mb-0"
+                  >and my email is</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                  required
+                />
+              </div>
 
-                        <!-- <div class="d-flex flex-wrap flex-wrap flex-lg-nowrap justify-content-lg-center align-items-end py-md-4">
+              <!-- <div class="d-flex flex-wrap flex-wrap flex-lg-nowrap justify-content-lg-center align-items-end py-md-4">
                             <label for="date" class="quartary-header mb-0">I would like to schedule a tour at date and time</label>
                             <input type="datetime-local" id="date" class="flex-lg-grow-1 mx-lg-3 px-2 quartary-header mb-0">
                         </div> -->
-                        <div
-                            class="d-flex flex-wrap flex-wrap flex-md-nowrap justify-content-md-center align-items-end py-md-4">
-                            <label for="message" class="quartary-header mb-0">I would like to discuss about</label>
-                            <input type="text" id="message" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0">
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center my-3">
-                        <button type="submit" class="btn2">Get in touch</button>
-                    </div>
-                    <div id="output"></div>
-                </form>
-
+              <div
+                class="d-flex flex-wrap flex-wrap flex-md-nowrap justify-content-md-center align-items-end py-md-4"
+              >
+                <label for="message" class="quartary-header mb-0"
+                  >I would like to discuss about</label
+                >
+                <input
+                  type="text"
+                  id="message"
+                  class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                />
+              </div>
             </div>
+            <div class="d-flex justify-content-center my-3">
+              <button type="submit" class="btn2">Get in touch</button>
+            </div>
+            <div id="output"></div>
+          </form>
         </div>
-
+      </div>
     </section>
 
     <section id="blog" class="common-padding blogs">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="primary-header mb-2" data-aos="fade-up" data-aos-duration="600">Blogs
-                </h1>
-                <p class="primary-text mb-5" data-aos="fade-up" data-aos-duration="700">
-                    From Real Estate Industry and Beyond</p>
-            </div>
-            <div class="owl-carousel owl-carousel-blog px-md-5" id="createcard" data-aos="fade" data-aos-duration="600">
-                <!-- comes dynamically -->
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h1
+            class="primary-header mb-2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            Blogs
+          </h1>
+          <p
+            class="primary-text mb-5"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            From Real Estate Industry and Beyond
+          </p>
         </div>
+        <div
+          class="owl-carousel owl-carousel-blog px-md-5"
+          id="createcard"
+          data-aos="fade"
+          data-aos-duration="600"
+        >
+          <!-- comes dynamically -->
+        </div>
+      </div>
     </section>
 
-
-
     <footer>
-        <div class="container">
-            <div class="row  justify-content-between">
-                <div data-aos="zoom-in" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">
-                    <a class="navbar-brand nav-logo d-inline-flex align-items-center mb-4" href="index.html">
-                        <img src="assets/imagesandvectors/logonew.png" alt="">
-                        <p class="m-0 nav-text">Sonikka</p>
-                    </a>
-                </div>
-                <div class="col-12 col-md-5 col-lg-4">
-                    <p class="footer-text text-white mb-3" data-aos="fade-up" data-aos-duration="600"
-                        data-aos-anchor-placement="bottom-bottom">
-                        Sonikka Construction: Building Dreams into Reality. Transforming blueprints into lasting
-                        structures with precision and excellence. Explore the art of construction with Sonikka, where
-                        innovation meets craftsmanship to redefine your architectural aspirations.
-                    </p>
-                </div>
-                <div class="col-12 col-md-5 col-lg-4 text-md-end" data-aos="fade-up" data-aos-duration="600"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <div class="mb-1">
-                        <a href="#" class="text-white footer-text">
-                            <i class="bi bi-geo-alt-fill pe-2"></i>
-                            sonikka Construction, chennai-28
-                        </a>
-                    </div>
-                    <div class="mb-1">
-                        <a href="tel:67279xxxxx" class="text-white footer-text">
-                            <i class="bi bi-telephone-fill pe-2"></i>
-                            +91 98765 4XXXX
-                        </a>
-                    </div>
-                    <div>
-                        <a href="mailto:xxxxsjadjasn@gmail.com" class="text-white footer-text">
-                            <i class="bi bi-envelope pe-2"></i>
-                            sonikkaconstruction@gmail.com
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 mx-auto border-bottom footer-border border-3 mt-4 mb-5" data-aos="fade"
-                    data-aos-duration="600"></div>
-
-                <div class=" d-flex justify-content-center mb-3" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <a class="d-block nav-link primary-text  footer-link" target="_blank"
-                        href="https://www.linkedin.com/in/asecfire/"><i class="bi bi-facebook"></i>
-                    </a>
-
-                    <a class="d-block nav-link primary-text footer-link mx-3" target="_blank"
-                        href="https://twitter.com/asec_fire"><i class="bi bi-twitter"></i>
-                    </a>
-                    <a class="d-block nav-link primary-text  footer-link" target="_blank"
-                        href="https://plus.google.com/u/0/106652385634310929480"><i class="bi bi-google"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center text-center">
-            <p class="footer-bottom-text mb-0 light-color">Terms &amp; Conditions Privacy Policy </p>
-        </div>
-        <div class="d-flex justify-content-center text-center">
-            <p class="footer-bottom-text mb-0">Copyright © 2023 - Sonikka | All Rights Reserved | Designed By Axess Tech
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="700"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <a
+              class="navbar-brand nav-logo d-inline-flex align-items-center mb-4"
+              href="index.html"
+            >
+              <img src="assets/imagesandvectors/logonew.png" alt="" />
+              <p class="m-0 nav-text">Sonikka</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4">
+            <p
+              class="footer-text text-white mb-3"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              Sonikka Construction: Building Dreams into Reality. Transforming
+              blueprints into lasting structures with precision and excellence.
+              Explore the art of construction with Sonikka, where innovation
+              meets craftsmanship to redefine your architectural aspirations.
             </p>
+          </div>
+          <div
+            class="col-12 col-md-5 col-lg-4 text-md-end"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="mb-1">
+              <a href="#" class="text-white footer-text">
+                <i class="bi bi-geo-alt-fill pe-2"></i>
+                sonikka Construction, chennai-28
+              </a>
+            </div>
+            <div class="mb-1">
+              <a href="tel:67279xxxxx" class="text-white footer-text">
+                <i class="bi bi-telephone-fill pe-2"></i>
+                +91 98765 4XXXX
+              </a>
+            </div>
+            <div>
+              <a
+                href="mailto:xxxxsjadjasn@gmail.com"
+                class="text-white footer-text"
+              >
+                <i class="bi bi-envelope pe-2"></i>
+                sonikkaconstruction@gmail.com
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12 mx-auto border-bottom footer-border border-3 mt-4 mb-5"
+            data-aos="fade"
+            data-aos-duration="600"
+          ></div>
+
+          <div
+            class="d-flex justify-content-center mb-3"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <a
+              class="d-block nav-link primary-text footer-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/asecfire/"
+              ><i class="bi bi-facebook"></i>
+            </a>
+
+            <a
+              class="d-block nav-link primary-text footer-link mx-3"
+              target="_blank"
+              href="https://twitter.com/asec_fire"
+              ><i class="bi bi-twitter"></i>
+            </a>
+            <a
+              class="d-block nav-link primary-text footer-link"
+              target="_blank"
+              href="https://plus.google.com/u/0/106652385634310929480"
+              ><i class="bi bi-google"></i>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center text-center">
+        <p class="footer-bottom-text mb-0 light-color">
+          Terms &amp; Conditions Privacy Policy
+        </p>
+      </div>
+      <div class="d-flex justify-content-center text-center">
+        <p class="footer-bottom-text mb-0">
+          Copyright © 2023 - Sonikka | All Rights Reserved | Designed By Axess
+          Tech
+        </p>
+      </div>
     </footer>
 
-
     <div class="scroll-top" id="scrollToTopBtn">
-        <i class="bi bi-chevron-compact-up"></i>
-        <img src="assets/imagesandvectors/logonew.png" alt="" class="img-fluid">
+      <i class="bi bi-chevron-compact-up"></i>
+      <img src="assets/imagesandvectors/logonew.png" alt="" class="img-fluid" />
     </div>
-
-
 
     <!-- jquery downloading js -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <!-- AOS CDN -->
     <script src="assets/js/aos.js"></script>
     <!-- fancy box js -->
@@ -1056,62 +1680,65 @@
     <script src="assets/js/contact.js"></script>
 
     <script>
-        const carouselList = document.querySelector('.in-ex-carousel__list');
-        const elems = Array.from(document.querySelectorAll('.in-ex-carousel__item'));
-        let currentIndex = 0; // Keep track of the current active index
-        let intervalId; // Store the interval ID for later use
+      const carouselList = document.querySelector(".in-ex-carousel__list");
+      const elems = Array.from(
+        document.querySelectorAll(".in-ex-carousel__item")
+      );
+      let currentIndex = 0; // Keep track of the current active index
+      let intervalId; // Store the interval ID for later use
 
-        // Function to start the automatic scrolling interval
-        function startInterval() {
-            intervalId = setInterval(() => {
-                const nextIndex = (currentIndex + 1) % elems.length;
-                update(elems[nextIndex]);
-            }, 3000000); // Adjust the interval duration as needed (in milliseconds)
-        }
+      // Function to start the automatic scrolling interval
+      function startInterval() {
+        intervalId = setInterval(() => {
+          const nextIndex = (currentIndex + 1) % elems.length;
+          update(elems[nextIndex]);
+        }, 3000000); // Adjust the interval duration as needed (in milliseconds)
+      }
 
-        // Initial start of the interval
+      // Initial start of the interval
+      startInterval();
+
+      // Event listener for mouseenter to pause scrolling
+      carouselList.addEventListener("mouseenter", function () {
+        clearInterval(intervalId);
+      });
+
+      // Event listener for mouseleave to resume scrolling
+      carouselList.addEventListener("mouseleave", function () {
         startInterval();
+      });
 
-        // Event listener for mouseenter to pause scrolling
-        carouselList.addEventListener('mouseenter', function () {
-            clearInterval(intervalId);
-        });
+      carouselList.addEventListener("click", function (event) {
+        // Clear the interval when a manual click is detected
+        clearInterval(intervalId);
 
-        // Event listener for mouseleave to resume scrolling
-        carouselList.addEventListener('mouseleave', function () {
-            startInterval();
-        });
+        const newActive = event.target.closest(".in-ex-carousel__item");
 
-        carouselList.addEventListener('click', function (event) {
-            // Clear the interval when a manual click is detected
-            clearInterval(intervalId);
-
-            const newActive = event.target.closest('.in-ex-carousel__item');
-
-            if (!newActive || newActive.classList.contains('in-ex-carousel__item_active')) {
-                return;
-            }
-
-            update(newActive);
-        });
-
-        function getPos(current, active) {
-            const diff = current - active;
-            return Math.abs(diff) > 2 ? -current : diff;
+        if (
+          !newActive ||
+          newActive.classList.contains("in-ex-carousel__item_active")
+        ) {
+          return;
         }
 
-        function update(newActive) {
-            const newActivePos = newActive.dataset.pos;
-            elems.forEach(item => {
-                const itemPos = item.dataset.pos;
-                item.dataset.pos = getPos(itemPos, newActivePos);
-            });
+        update(newActive);
+      });
 
-            // Update the currentIndex to keep track of the current active index
-            currentIndex = elems.indexOf(newActive);
-        }
+      function getPos(current, active) {
+        const diff = current - active;
+        return Math.abs(diff) > 2 ? -current : diff;
+      }
 
+      function update(newActive) {
+        const newActivePos = newActive.dataset.pos;
+        elems.forEach((item) => {
+          const itemPos = item.dataset.pos;
+          item.dataset.pos = getPos(itemPos, newActivePos);
+        });
+
+        // Update the currentIndex to keep track of the current active index
+        currentIndex = elems.indexOf(newActive);
+      }
     </script>
-</body>
-
+  </body>
 </html>
