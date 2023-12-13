@@ -140,7 +140,7 @@ try {
         var cardData = [
             {
                 id: 'blog1',
-                image: 'assets/imagesandvectors/carousel/carousel-img-1.jpg',
+                image: 'assets/imagesandvectors/main-carousel/carousel-img-1.jpg',
                 title: 'Standard Post Format',
                 text: 'Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky…'
             },
@@ -158,7 +158,7 @@ try {
             },
             {
                 id: 'blog4',
-                image: 'assets/imagesandvectors/carousel/carousel-img-1.jpg',
+                image: 'assets/imagesandvectors/main-carousel/carousel-img-2.jpg',
                 title: 'Standard Post Format',
                 text: 'Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky…'
             },
