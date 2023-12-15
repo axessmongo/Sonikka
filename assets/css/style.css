@@ -459,9 +459,6 @@ input::placeholder {
     z-index: 1;
 }
 
-.testimonial::before,
-
-
 /* about css */
 
 .about {
@@ -690,7 +687,7 @@ input::placeholder {
     color: #828282;
     left: 10px;
     top: 10px;
-    line-height: 1;
+    line-height: 0;
     padding: 0;
 }
 
@@ -698,8 +695,11 @@ input::placeholder {
     right: 10px;
     left: unset;
     top: unset;
-    line-height: 0;
     bottom: 10px
+}
+
+.testimonial::before{
+    transform: rotate(180deg);
 }
 
 /* footer */
