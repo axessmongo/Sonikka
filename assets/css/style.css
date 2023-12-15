@@ -476,6 +476,15 @@ input::placeholder {
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 5px 10px 0px #DBDBDB;
     border: none;
+    height: 100%;
+}
+
+.about .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* about css ends here */
