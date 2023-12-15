@@ -1019,8 +1019,8 @@ footer {
         height: 200px;
     }
 
-    #features .carousel img{
-        height: 200px;
+    #features .carousel img, #carousel2 img{
+        height: 200px !important;
     }
 
     footer {
