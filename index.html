@@ -108,14 +108,10 @@
     }
 
     .custom-card {
-        min-height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding: 3%;
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(30px);
+        margin: 20px;
     }
 
     .button-container {
@@ -138,8 +134,8 @@
 
 
 
-<body class="overflow-x-hidden justify-content-center align-items-center d-flex" style="height: 100vh;">
-    <nav class="navbar navbar-expand-lg shadow-1 bg-transparent shadow-none px-5" data-aos="fade-down"
+<body class="overflow-x-hidden">
+    <nav class="navbar navbar-expand-lg shadow-1 bg-transparent shadow-none px-md-5" data-aos="fade-down"
         data-aos-duration="600">
         <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand nav-logo d-flex align-items-center" href="index.html">
@@ -149,11 +145,8 @@
         </div>
     </nav>
 
-    <section class="tour overflow-hidden common-padding">
-
-        <div class="row d-flex justify-content-evenly">
-
-            <div class="col-md-4 tourForm rounded-4 py-3 consultant custom-card"
+    <section class=" d-md-flex align-items-center justify-content-center min-vh-100 gx-5">
+            <div class="col-md-4 tourForm rounded-4 py-3 consultant custom-card" data-aos="fade-right"
                 style="box-shadow: rgba(0, 0, 0, 0.952) 0px 5px 15px;">
                 <h2 class="primary-header mb-4 text-center">Promoters</h2>
                 <div class="text-container">
@@ -169,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 tourForm rounded-4 py-3 consultant custom-card"
+            <div class="col-md-4 tourForm rounded-4 py-3 consultant custom-card"data-aos="fade-left"
                 style="box-shadow: rgba(0, 0, 0, 0.952) 0px 5px 15px;">
                 <h2 class="primary-header mb-4 text-center">Consultants</h2>
                 <div class="text-container">
@@ -185,7 +178,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- jquery downloading js -->

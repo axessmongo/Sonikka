@@ -253,6 +253,7 @@
     padding-top: 15px;
     display: none;
     overflow: hidden;
+    z-index: 99999999;
 }
 
 .scroll-top i {
@@ -304,6 +305,14 @@
 
 @media(max-width:768px) {
     .scroll-top {
-        bottom: 70px;
+        bottom: 20px;
     }
+}
+
+.whatsapp {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    z-index: 99999999;
+    width: 50px;
 }
