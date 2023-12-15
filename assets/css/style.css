@@ -457,6 +457,7 @@ input::placeholder {
 
 .in-ex-carousel__item[data-pos="0"] .full {
     z-index: 1;
+    animation: blink 1s  infinite ease;
 }
 
 /* about css */
