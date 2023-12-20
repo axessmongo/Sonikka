@@ -146,13 +146,13 @@ try {
             },
             {
                 id: 'blog2',
-                image: 'assets/imagesandvectors/carousel/carousel_img_2.jpg',
+                image: 'assets/imagesandvectors/main-carousel/carousel-img-3.jpg',
                 title: 'Standard Post Format',
                 text: 'Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky…'
             },
             {
                 id: 'blog3',
-                image: 'assets/imagesandvectors/carousel/carousel_img_3.jpg',
+                image: 'assets/imagesandvectors/main-carousel/carousel-img-6.jpg',
                 title: 'Standard Post Format',
                 text: 'Enthusiastically disintermediate progressive innovation before high-payoff metrics. Intrinsicly generate sticky…'
             },
