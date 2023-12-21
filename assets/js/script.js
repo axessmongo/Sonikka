@@ -204,6 +204,7 @@ try {
             loop: true, // Infinite loop
             margin: 20, // Margin between items
             responsiveClass: true,
+            nav: true,
             autoplay: true,
             autoplayTimeout: 2000, // Pause for 3 seconds between slides
             autoplayHoverPause: true,
@@ -229,7 +230,7 @@ try {
             autoplay: true,
             autoplayTimeout: 2000000, // Pause for 3 seconds between slides
             autoplayHoverPause: true,
-            autoWidth:true,
+            autoWidth: true,
             center: true,
             responsive: {
                 0: {

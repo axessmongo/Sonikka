@@ -43,7 +43,7 @@
                 <img src="assets/imagesandvectors/logonew.png" loading="lazy" alt="">
                 <p class="m-0 nav-text">Sonikka</p>
             </a>
-            <a href="consultants.html" class="primary-text text-center secondary-color fw-700">Move to <br> Legal
+            <a href="consultants.html" class="primary-text text-center secondary-color fw-700 d-none">Move to <br> Legal
                 consultants</a>
             <button class="navbar-toggler shadow-none border-0 hamburger hamburger--spring js-hamburger collapsed"
                 type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -93,6 +93,13 @@
     <section class="position-relative home" data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in-sine"
         id="home">
         <div id="carousel1" class="carousel slide carousel-fade h-100 mb-5 mb-lg-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner h-100">
                 <div class="carousel-item h-100 active">
                     <img src="assets/imagesandvectors/main-carousel/carousel-img-1.jpg" class="d-block w-100 h-100"
@@ -111,14 +118,14 @@
                         loading="lazy" alt="assets/imagesandvectors/main-carousel/carousel-img-7.webp">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
         <div class="home-card mb-5 mb-lg-0 d-none" data-aos="fade-up" data-aos-duration="800"
             data-aos-easing="ease-in-sine">
@@ -681,29 +688,24 @@
                         data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         <div class="carousel-inner rounded-3">
                             <div data-bs-interval="3000" class="carousel-item active">
-                                <img src="assets/imagesandvectors/amenities/img1.jpg"
-                                    class="d-block w-100" loading="lazy"
-                                    alt="assets/imagesandvectors/amenities/img1.jpg">
+                                <img src="assets/imagesandvectors/amenities/img1.jpg" class="d-block w-100"
+                                    loading="lazy" alt="assets/imagesandvectors/amenities/img1.jpg">
                             </div>
                             <div data-bs-interval="3000" class="carousel-item">
-                                <img src="assets/imagesandvectors/amenities/img2.jpg"
-                                    class="d-block w-100" loading="lazy"
-                                    alt="assets/imagesandvectors/amenities/img2.jpg">
+                                <img src="assets/imagesandvectors/amenities/img2.jpg" class="d-block w-100"
+                                    loading="lazy" alt="assets/imagesandvectors/amenities/img2.jpg">
                             </div>
                             <div data-bs-interval="3000" class="carousel-item">
-                                <img src="assets/imagesandvectors/amenities/img3.jpg"
-                                    class="d-block w-100" loading="lazy"
-                                    alt="assets/imagesandvectors/amenities/img3.jpg">
+                                <img src="assets/imagesandvectors/amenities/img3.jpg" class="d-block w-100"
+                                    loading="lazy" alt="assets/imagesandvectors/amenities/img3.jpg">
                             </div>
                             <div data-bs-interval="3000" class="carousel-item">
-                                <img src="assets/imagesandvectors/amenities/img4.jpg"
-                                    class="d-block w-100" loading="lazy"
-                                    alt="assets/imagesandvectors/amenities/img4.jpg">
+                                <img src="assets/imagesandvectors/amenities/img4.jpg" class="d-block w-100"
+                                    loading="lazy" alt="assets/imagesandvectors/amenities/img4.jpg">
                             </div>
                             <div data-bs-interval="3000" class="carousel-item">
-                                <img src="assets/imagesandvectors/amenities/img5.jpg"
-                                    class="d-block w-100" loading="lazy"
-                                    alt="assets/imagesandvectors/amenities/img5.jpg">
+                                <img src="assets/imagesandvectors/amenities/img5.jpg" class="d-block w-100"
+                                    loading="lazy" alt="assets/imagesandvectors/amenities/img5.jpg">
                             </div>
                         </div>
 
@@ -1056,6 +1058,11 @@
         <img src="assets/imagesandvectors/logonew.png" loading="lazy" alt="" class="img-fluid">
     </div>
 
+    <a href="consultants.html" class="popup pop-ani text-decoration-none">
+        <span>Move to Legal
+            consultants</span>
+    </a>
+
 
     <script>
         const carouselList = document.querySelector('.in-ex-carousel__list');
@@ -1127,6 +1134,20 @@
     <script src="assets/js/script.js"></script>
     <!-- contact script -->
     <script src="assets/js/contact.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.popup').removeClass('pop-ani');
+        }, 2000);
+
+
+        setInterval(function () {
+            $('.popup').addClass('pop-ani');
+        }, 5000);
+
+        setInterval(function () {
+            $('.popup').removeClass('pop-ani');
+        }, 10000);
+    </script>
 </body>
 
 </html>
