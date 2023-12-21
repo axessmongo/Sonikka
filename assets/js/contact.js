@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // const scriptURLAdmin = "https://script.google.com/macros/s/AKfycbyxtcehxZwNx77I0QYUOqLC8ZAOG9jWRVZIDoP_24nR0bWKUR2FQN7YQ8AuSuQZUT2x/exec"
-    // const scriptURLMD = "https://script.google.com/macros/s/AKfycbzFSSWqyZDoefkXarZgjDd26X2J4tPzotfkEpHsq_Oy7ES2neY8OXxTykxAroOKANWu/exec"
-    const googleSheet = "https://script.google.com/macros/s/AKfycbxHha_XQ3qKAYbsGZoeK0VtaMJsIvkW1i0yaMqYtsQLPcd9q_Y5N_bYJNJT2ug1p-LaXg/exec"
+    const googleSheetTest = "https://script.google.com/macros/s/AKfycbxHha_XQ3qKAYbsGZoeK0VtaMJsIvkW1i0yaMqYtsQLPcd9q_Y5N_bYJNJT2ug1p-LaXg/exec"
     const form = document.forms["contactForm"];
     const output = document.getElementById("output");
     output.textContent = "Response";
@@ -58,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   
       Promise.all([
-         fetch(googleSheet, { method: "POST", body: new FormData(form) }),
-        // fetch(scriptURLMD, { method: "POST", body: new FormData(form) })
+         fetch(googleSheetTest, { method: "POST", body: new FormData(form) }),
+       
       ])
         .then((responses) => Promise.all(responses.map((response) => response.json())))
         .then((responses) => {
