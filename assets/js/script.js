@@ -60,7 +60,6 @@ try {
             });
 
             if (currentSectionId) {
-                console.log("Current Section ID: " + currentSectionId);
                 $('.navbar .nav-link').removeClass('active');
                 $('.navbar .nav-link[href="#' + currentSectionId + '"]').addClass('active');
                 if (currentSectionId == "recent-projects") {
@@ -195,7 +194,7 @@ try {
         const pageId = originalBodyId.split("-page-").join('');
         const selector = '#' + originalBodyId + ' .' + pageId;
         const pageElement = $(selector);
-        console.log(selector);
+       
         pageElement.remove();
 
 
