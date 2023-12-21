@@ -905,36 +905,33 @@
                         <div
                             class="d-flex flex-wrap flex-wrap flex-md-nowrap col-lg-6 justify-content-md-center align-items-end py-md-4">
                             <label for="name" class="quartary-header mb-0">Hey my name is</label>
-                            <input type="text" id="name" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                            <input type="text" id="name" name = "name"class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
                                 required>
                         </div>
                         <div
                             class="d-flex flex-wrap flex-wrap flex-md-nowrap col-lg-6 justify-content-md-center align-items-end py-md-4">
                             <label for="phone" class="quartary-header mb-0">and my phone is</label>
-                            <input type="tel" id="phone" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                            <input type="tel" id="phone"  name = "phone" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
                                 maxlength="10" pattern="[0-9]{10}" title="Please enter a 10-digit number" required>
                         </div>
                         <div
                             class="d-flex flex-wrap flex-wrap flex-md-nowrap col-12 justify-content-md-center align-items-end py-md-4">
                             <label for="email" class="quartary-header mb-0">and my email is</label>
-                            <input type="email" id="email" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
+                            <input type="email" id="email" name = "email" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0"
                                 required>
                         </div>
 
-                        <!-- <div class="d-flex flex-wrap flex-wrap flex-lg-nowrap justify-content-lg-center align-items-end py-md-4">
-                            <label for="date" class="quartary-header mb-0">I would like to schedule a tour at date and time</label>
-                            <input type="datetime-local" id="date" class="flex-lg-grow-1 mx-lg-3 px-2 quartary-header mb-0">
-                        </div> -->
                         <div
                             class="d-flex flex-wrap flex-wrap flex-md-nowrap justify-content-md-center align-items-end py-md-4">
                             <label for="message" class="quartary-header mb-0">I would like to discuss about</label>
-                            <input type="text" id="message" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0">
+                            <input type="text" id="message"  name = "message" class="flex-lg-grow-1 mx-md-3 px-2 quartary-header mb-0">
                         </div>
                     </div>
+                    <div id="output" class="text-center"></div>
                     <div class="d-flex justify-content-center my-3">
                         <button type="submit" class="btn2">Get in touch</button>
                     </div>
-                    <div id="output"></div>
+                    
                 </form>
 
             </div>
