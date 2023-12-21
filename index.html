@@ -78,10 +78,13 @@
         z-index: 1000;
     }
 
+   
+
     body {
         background: url("assets/imagesandvectors/main-carousel/carousel-img-3.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
+        /* filter: brightness(0.3) !important; */
         background-size: cover;
 
     }
@@ -94,7 +97,7 @@
     }
 
     .primary-header {
-        font-size: 40px;
+        font-size: 30px;
         line-height: 1.2em;
         margin-bottom: 32px;
         color: var(--sonika-secondary-color);
@@ -130,13 +133,17 @@
         justify-content: center;
         align-items: center;
     }
+    .owl-carousel .item img{
+        /* width:200px; */
+        height: 100px;
+    }
 </style>
 
 
 
-<body class="overflow-x-hidden">
-    <nav class="navbar navbar-expand-lg shadow-1 bg-transparent shadow-none px-md-5 position-absolute" data-aos="fade-down"
-        data-aos-duration="600">
+<body class=" overflow-y-hidden">
+    <nav class="navbar navbar-expand-lg shadow-1 bg-transparent shadow-none px-md-5 position-absolute"
+        data-aos="fade-down" data-aos-duration="600">
         <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand nav-logo d-flex align-items-center" href="index.html">
                 <img src="assets/imagesandvectors/logonew.png" alt="">
@@ -144,58 +151,119 @@
             </a>
         </div>
     </nav>
-
-    <section class=" d-flex flex-wrap align-items-end align-items-md-center justify-content-center min-vh-100 gx-5">
-            <div class="col-md-4 tourForm rounded-4 py-3 consultant custom-card" data-aos="fade-right"
+    <div class="mainpage">
+        <section class=" d-flex flex-wrap align-items-end align-items-md-center mt-5 justify-content-center  gx-5">
+            <div class="col-md-4 tourForm rounded-4 py-2 consultant custom-card" data-aos="fade-right"
                 style="box-shadow: rgba(0, 0, 0, 0.952) 0px 5px 15px;">
-                <h2 class="primary-header mb-4 text-center">Promoters</h2>
+                <h4 class="primary-header mb-4 text-center">For Construction Layout Promotions and Joint Ventures</h4>
                 <div class="text-container">
+                    <p class="primary-text">Our experienced legal consultants are here to provide comprehensive</p>
 
-                    <p class="primary-text mb-3">Our experienced legal consultants are here to provide
-                        comprehensive
-                        legal support for your construction projects.Our experienced legal consultants are here to
-                        provide
-                        comprehensive
+                    <p class="primary-text">legal support for your construction projects.Our experienced legal
+                        consultants
+                        are here to provide comprehensive
                         legal support for your construction projects.</p>
                     <div class="d-flex justify-content-center align-items-center button-container">
                         <a href="promoters.html" class="btn1">Go</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 tourForm rounded-4 py-3 consultant custom-card"data-aos="fade-left"
+            <div class="col-md-4 tourForm rounded-4 py-4 consultant custom-card" data-aos="fade-left"
                 style="box-shadow: rgba(0, 0, 0, 0.952) 0px 5px 15px;">
-                <h2 class="primary-header mb-4 text-center">Consultants</h2>
+                <h4 class="primary-header mb-4 text-center">For Legal Consaltations And Opinions</h4>
                 <div class="text-container">
-
-                    <p class="primary-text mb-3">Our experienced legal consultants are here to provide
-                        comprehensive
-                        legal support for your construction projects.Our experienced legal consultants are here to
-                        provide
-                        comprehensive
-                        legal support for your construction projects.</p>
+                    <p class="primary-text">Here we have to let them know if there is any problem in getting approval
+                    </p>
+                    <p class="primary-text">the getting out of any litigation problems and if they are worried about
+                        paying the bank loan, we
+                        can take care of preventing the auction and selling the lands as well</p>
                     <div class="d-flex justify-content-center align-items-center button-container">
-                        <a href="consultants.html" class="btn1">Go</a>
+                        <a href="consultants.html" class="btn1 ">Go</a>
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./assets/imagesandvectors/gallery/gallery-10.jpg" alt="">
+            </div>
 
-    <!-- jquery downloading js -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
+
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
     <!-- AOS CDN -->
     <script src="assets/js/aos.js"></script>
+
     <!-- fancy box js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
     <!-- owl carousel JS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- custom script -->
+
+    <!-- Custom scripts -->
     <script src="assets/js/script.js"></script>
-    <!-- contact script -->
     <script src="assets/js/contact.js"></script>
+
+    <!-- Owl Carousel initialization -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                // stagePadding: 50,
+                loop: true,
+                     // margin: 3,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 
