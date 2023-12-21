@@ -9,9 +9,15 @@
     <link rel="shortcut icon" href="assets/imagesandvectors/logo.png" type="image/x-icon">
     <!-- redirect  -->
     <script>
-        if (window.location.pathname === "/index.html") {
-            window.location.href = '/'
+
+        const url = window.location.pathname;
+        const lastIndex = url.lastIndexOf('index.html');
+
+        if (lastIndex !== -1) {
+            const updatedUrl = url.substring(0, lastIndex);
+            window.history.replaceState({}, document.title, updatedUrl);
         }
+
 
     </script>
     <!-- Bootstrap CDN -->
