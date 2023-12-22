@@ -1,10 +1,50 @@
 #container {
-    height: 80vh;
+    height: 79.9vh;
     overflow: hidden;
     position: relative;
     max-width: 100%;
 }
 
+p:not(.nav-text){
+    color: white !important;
+}
+
+.inner-container {
+    background: rgb(255 255 255 / 20%);
+    backdrop-filter: saturate(180%) blur(10px);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.index-logo{
+    position: fixed;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-carousel{
+    height: 20vh;
+    overflow: hidden;
+}
+
+.owl-carousel * {
+    height: 100%;
+}
+
+.nav-logo{
+    background-color: white;
+    padding: 5px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.nav-logo img {
+    width: 30px;
+}
+
+.nav-text {
+    font-size: 20px;
+}
 
 span {
     font-size: 12px;
@@ -18,7 +58,7 @@ a {
 }
 
 .form-container form {
-    background: #028b02;
+    /* background: #028b02; */
     display: flex;
     flex-direction: column;
     padding: 0 50px;
@@ -64,6 +104,10 @@ a {
     transform: scale(101%);
 }
 
+.btn1, .btn2{
+    margin: 0;
+}
+
 button,
 .bu {
     border-radius: 50px;
@@ -77,6 +121,8 @@ button,
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
+    display: inline-block;
+    margin: 0 !important;
 }
 
 button:hover,
@@ -132,9 +178,7 @@ button.ghost {
 }
 
 .overlay {
-    background: #ff416c;
-    /* background: linear-gradient(to right, #008ecf, #008ecf) no-repeat 0 0 / cover; */
-    background-color: #1d3c5a;
+    /* background-color: #1d3c5a; */
     color: #fff;
     position: relative;
     left: -100%;
@@ -234,6 +278,7 @@ button.ghost {
     /* Move signin to right */
     .container.right-panel-active .sign-in-container {
         transform: translateY(100%);
+        opacity: 0;
     }
 
     /* Move overlay to left */
