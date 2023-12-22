@@ -2,279 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonikka</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/imagesandvectors/logo.png" type="image/x-icon">
-    <!-- redirect  -->
-    <script>
-
-        const url = window.location.pathname;
-        const lastIndex = url.lastIndexOf('index.html');
-
-        if (lastIndex !== -1) {
-            const updatedUrl = url.substring(0, lastIndex);
-            window.history.replaceState({}, document.title, updatedUrl);
-        }
-
-
-    </script>
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Bootstrap Icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <!-- aos scrolling animation CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- general custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- hamburger custom css -->
-    <link rel="stylesheet" href="assets/css/hamburger.css">
-    <!-- fancy box css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-    <!-- owl-carousel css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <link rel='stylesheet' href='assets/css/hamburger.css'>
+    <link rel='stylesheet' href='assets/css/index.css'>
 </head>
 
-<style>
-    .promoter {
-        /* background-image: url(./assets/imagesandvectors/features/con1.jpg); */
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0.9;
-    }
-
-    .consultant {
-        /* background-image: url(./assets/imagesandvectors/features/pro1.jpg); */
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0.9;
-    }
-
-    #tour {
-
-        background-attachment: fixed;
-        /* background-image: url("./assets/imagesandvectors/features/pro2.jpeg"); */
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
-    #tour::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-
-        opacity: 0.4;
-    }
-
-    /* Add colorful background to the sections */
-
-
-    .promoter,
-    .consultant {
-        background-color: #9bc070;
-        color: #ffffff;
-
-    }
-
-    .navbar-logo {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 1000;
-    }
-
-
-
-    body {
-        background: url("assets/imagesandvectors/main-carousel/carousel-img-3.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        /* filter: brightness(0.3) !important; */
-        background-size: cover;
-
-    }
-
-    .primary-text {
-        font-size: 16px;
-        line-height: 30px;
-        color: black;
-        margin: 0px;
-    }
-
-    .primary-header {
-        font-size: 30px;
-        line-height: 1.2em;
-        margin-bottom: 32px;
-        color: var(--sonika-secondary-color);
-        font-weight: 300;
-        font-family: var(--sonika-secondary-font);
-    }
-
-    .navbar-logo img {
-        height: 50px;
-        width: auto;
-    }
-
-    .custom-card {
-        padding: 3%;
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(30px);
-        margin: 20px;
-    }
-
-    .button-container {
-        height: 100%;
-        /* Ensure the container takes the full height of the card */
-    }
-
-    .button-container a {
-        display: inline-block;
-        /* Make the anchor element a block-level element */
-    }
-
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .owl-carousel .item img {
-        /* width:200px; */
-        height: 100px;
-    }
-</style>
-
-
-
-<body class="">
-    <nav class="navbar navbar-expand-lg shadow-1 bg-transparent shadow-none px-md-5 position-absolute"
-        data-aos="fade-down" data-aos-duration="600">
-        <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand nav-logo d-flex align-items-center" href="index.html">
-                <img src="assets/imagesandvectors/logonew.png" alt="">
-                <p class="m-0 nav-text">Sonikka</p>
-            </a>
-        </div>
-    </nav>
-    <div class="mainpage">
-        <section class=" d-flex flex-wrap align-items-end align-items-md-center mt-5 justify-content-center  gx-5">
-            <div class="col-md-4 tourForm rounded-4 py-2 consultant custom-card" data-aos="fade-right"
-                style="box-shadow: rgba(0, 0, 0, 0.952) 0px 5px 15px;">
-                <h4 class="primary-header mb-4 text-center">For Construction Layout Promotions & Joint Ventures</h4>
-                <div class="text-container">
-                    <p class="primary-text text-capitalize"> From concept to completion, we're your partners in crafting exceptional
-                        properties. Explore lucrative layout promotions, navigate joint ventures with ease, and build
-                        with expertise. Let's turn your vision into reality.</p>
-                    <div class="d-flex justify-content-center align-items-center button-container">
-                        <a href="promoters.html" class="btn1">Go</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 tourForm rounded-4 py-4 consultant custom-card" data-aos="fade-left"
-                style="box-shadow: rgba(0, 0, 0, 0.952) 0px 5px 15px;">
-                <h4 class="primary-header mb-4 text-center">For Legal Consaltations & Opinions</h4>
-                <div class="text-container">
-                    <p class="primary-text text-capitalize">Don't let legal complexities stall your property goals. Secure clear, expert
-                        advice on contracts, disputes, and transactions. Our legal eagles ensure smooth sailing, every
-                        step of the way. Get peace of mind, get informed.
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center button-container">
-                        <a href="consultants.html" class="btn1 mt-3">Go</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-1.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-2.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-3.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-4.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-5.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-6.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-7.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-8.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-9.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/imagesandvectors/gallery/gallery-10.jpg" alt="">
-            </div>
-
-        </div>
+<body>
+    <div class="index-logo">
+        <a class="navbar-brand nav-logo d-flex align-items-end m-0" href="index.html" data-aos="fade-down"
+            data-aos-duration="1000">
+            <img src="assets/imagesandvectors/logonew.png" alt="">
+            <p class="m-0 nav-text">Sonikka</p>
+        </a>
     </div>
+    <section id="tour">
+        <div class="container d-lg-flex justify-content-center align-items-center common-padding" id="container"
+            data-aos="fade">
+            <div class="inner-container mx-3 mt-5 mt-lg-0" data-aos="fade-right" data-aos-duration="600">
+                <h1 class="tertary-header mb-2 w-100">For Construction Layout Promotions & Joint Ventures</h1>
+                <p class="primary-text text-white mb-2">From Concept To Completion, We're Your Partners In Crafting
+                    Exceptional Properties. Explore Lucrative Layout Promotions, Navigate Joint Ventures With Ease, And
+                    Build With Expertise. Let's Turn Your Vision Into Reality.</p>
+                <a class="btn1" href="promoters.html">Click Here</a>
+            </div>
+            <div class="inner-container mx-3 my-5 my-lg-0" data-aos="fade-left" data-aos-duration="600">
+                <h1 class="tertary-header mb-2 w-100">For Legal Consaltations & Opinions</h1>
+                <p class="primary-text text-white mb-2">Don't Let Legal Complexities Stall Your Property Goals. Secure
+                    Clear, Expert Advice On Contracts, Disputes, And Transactions. Our Legal Eagles Ensure Smooth
+                    Sailing, Every Step Of The Way. Get Peace Of Mind, Get Informed. </p>
+                <a class="btn1" href="consultants.html">Click Here</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- jQuery -->
+    <section>
+        <div class="owl-carousel">
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-1.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-2.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-3.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-4.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-5.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-6.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-7.jpg" alt="">
+            </div>
+            <div>
+                <img src="assets/imagesandvectors/gallery/gallery-8.jpg" alt="">
+            </div>
+        </div>
+    </section>
     <script src="assets/js/jquery.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-    <!-- AOS CDN -->
-    <script src="assets/js/aos.js"></script>
-
-    <!-- fancy box js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-    <!-- owl carousel JS file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- Custom scripts -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/contact.js"></script>
-
-    <!-- Owl Carousel initialization -->
+    <script src='assets/js/bootstrap.bundle.min.js'></script>
+    <script src='assets/js/aos.js'></script>
+    <script src='assets/js/owl.carousel.min.js'></script>
     <script>
-        $(document).ready(function () {
+        AOS.init();
+         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 // stagePadding: 50,
                 loop: true,
                 // margin: 3,
                 autoplay: true,
-                autoplayTimeout: 1500,
+                autoplayTimeout: 1000,
                 autoplayHoverPause: true,
                 dots: false,
                 responsive: {
                     0: {
-                        items: 1
+                        items: 2
                     },
                     600: {
                         items: 3
                     },
                     1000: {
-                        items: 5
+                        items: 6
                     }
                 }
             });
         });
-    </script>
 
+    </script>
 </body>
 
 </html>

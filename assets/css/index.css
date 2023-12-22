@@ -2,28 +2,28 @@
     height: 79.9vh;
     overflow: hidden;
     position: relative;
-    max-width: 100%;
-}
-
-p:not(.nav-text){
-    color: white !important;
 }
 
 .inner-container {
     background: rgb(255 255 255 / 20%);
     backdrop-filter: saturate(180%) blur(10px);
-    padding: 5%;
+    padding: 30px;
     border-radius: 5px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.index-logo{
+.index-logo {
     position: fixed;
     z-index: 5;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.owl-carousel{
+.owl-carousel {
     height: 20vh;
     overflow: hidden;
 }
@@ -32,18 +32,18 @@ p:not(.nav-text){
     height: 100%;
 }
 
-.nav-logo{
+.nav-logo {
     background-color: white;
     padding: 5px 10px 10px;
     border-radius: 0px 0px 5px 5px;
 }
 
 .nav-logo img {
-    width: 30px;
+    width: 50px;
 }
 
 .nav-text {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 span {
@@ -104,7 +104,8 @@ a {
     transform: scale(101%);
 }
 
-.btn1, .btn2{
+.btn1,
+.btn2 {
     margin: 0;
 }
 
@@ -245,12 +246,15 @@ button.ghost {
     transform: translateY(20%);
 }
 
-@media(max-width:768px) {
+@media(max-width:992px) {
     #container {
         overflow: visible;
-        min-height: 100vh;
+        min-height: auto;
+        height: auto;
         position: relative;
-        max-width: 100%;
+    }
+
+    .index-logo{
     }
 
     .form-container {
@@ -258,7 +262,7 @@ button.ghost {
         height: 50%;
     }
 
-    .sign-in-container ,
+    .sign-in-container,
     .sign-up-container {
         left: 0;
         width: 100%;
@@ -306,5 +310,10 @@ button.ghost {
     /* Same effect for right */
     .container.right-panel-active .overlay-right {
         transform: translateY(20%);
+    }
+
+    .form-container form,
+    .overlay-panel {
+        padding: 0px 20px;
     }
 }
