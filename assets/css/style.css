@@ -50,6 +50,7 @@ a {
     --sonika-secondary-font: 'Lora', serif;
     --sonika-primary-color: #585b5e;
     --sonika-primary-colornew: #A5A19E;
+    --sonika-primary-colornew: #6b6b6a;
     --sonika-secondary-color: #006524;
     --sonika-tertary-color: #487219;
     --sonika-ham-color: rgb(48, 48, 48);
@@ -276,15 +277,15 @@ input::placeholder {
     border-radius: 0 5px 5px 0
 }
 
-.home:hover .carousel-control-next,
-.home:hover .carousel-control-prev {
-    opacity: .8
-}
+    .home:hover .carousel-control-next,
+    .home:hover .carousel-control-prev {
+        opacity: .8
+    }
 
-.home .carousel-control-next:hover,
-.home .carousel-control-prev:hover {
-    opacity: 1 !important
-}
+    .home .carousel-control-next:hover,
+    .home .carousel-control-prev:hover {
+        opacity: 1 !important
+    }
 
 .home .carousel-control-next {
     border-radius: 5px 0 0 5px

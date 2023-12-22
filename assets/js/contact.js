@@ -1,86 +1,97 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
+    const googleSheetTest = "https://script.google.com/macros/s/AKfycbxHha_XQ3qKAYbsGZoeK0VtaMJsIvkW1i0yaMqYtsQLPcd9q_Y5N_bYJNJT2ug1p-LaXg/exec"
+    const form = document.forms["contactForm"];
     const output = document.getElementById("output");
- 
+    output.textContent = "Response";
+    output.style.opacity = 0; 
+    let isSubmitting = false;
+  
     form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const fname = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const date = document.getElementById("date").value;
-        const message = document.getElementById("message").value;
-
-        console.log("fname",fname,email,phone,typeof(date),message)
-        
-        if (fname === "" || email === "" || phone === "") {
-            output.textContent = "Please fill all the required fields!";
-            return;
-        }
-        
-        // Validation for name (only alphabetical characters)
-        const nameRegex = /^[a-zA-Z]+$/;
-        if (!nameRegex.test(fname)) {
+      event.preventDefault();
+  
+      if (isSubmitting) {
+  
+        return;
+      }
+  
+      isSubmitting = true;
+  
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+  
+      if (name === "" || email === "" || phone === "") {
+        output.textContent = "All fields are required!";
+        output.style.opacity = 1; 
+        isSubmitting = false;
+        return;
+      }
+  
+      const nameRegex = /^[a-zA-Z\s]+$/;
+      if (!nameRegex.test(name)) {
+        output.classList.add("text-danger");
+        output.textContent = "Invalid name. Please use only letters.";
+        isSubmitting = false;
+        output.style.opacity = 1; 
+        return;
+      }
+  
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        output.classList.add("text-danger");
+        output.textContent = "Invalid email address.";
+        isSubmitting = false;
+        output.style.opacity = 1; 
+        return;
+      }
+  
+      const phoneRegex = /^\d{10}$/;
+      if (!phoneRegex.test(phone)) {
+        output.classList.add("text-danger");
+        output.textContent = "Phone.No should be in 10 digits.";
+        output.style.opacity = 1; 
+        isSubmitting = false;
+        return;
+      }
+  
+      Promise.all([
+         fetch(googleSheetTest, { method: "POST", body: new FormData(form) }),
+       
+      ])
+        .then((responses) => Promise.all(responses.map((response) => response.json())))
+        .then((responses) => {
+          const allSuccessful = responses.every(response => response.result === "success");
+  
+          if (allSuccessful) {
+            alert("Thank you! Your form is submitted successfully.");
+            output.classList.remove("text-danger");
+            output.classList.add("text-success");
+            output.textContent = "Form submitted successfully!";
+            output.style.opacity = 1; 
+            form.reset();
+            setTimeout(function () {
+              output.style.opacity = 0; 
+              output.textContent = "Response";
+  
+            }, 2000);
+          } else {
+            alert("Error in request");
             output.classList.add("text-danger");
-            output.textContent = "Invalid name. Please use only letters.";
-            return;
-        }
-
-        // Validation for email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            output.classList.add("text-danger");
-            output.textContent = "Invalid email address.";
-            return;
-        }
-
-        // Validation for phone number (allow only digits, optional hyphens or spaces)
-     
-        const phoneRegex = /^\d{10}([- ]?\d+)*$/;
-        if (!phoneRegex.test(phone)) {
-            output.classList.add("text-danger");
-            output.textContent = "Phone.No should be 10 digits.";
-            return;
-        }
-
-
-        fetch("/api/post", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ fname, email, phone,date,message }),
+            output.textContent = "Internal server error";
+            output.style.opacity = 1; 
+          }
+  
+          isSubmitting = false; 
         })
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then((apiData) => {
-                console.log(apiData);
-                if (apiData.status === 200) {
-                    alert("User already exists");
-                    output.classList.add("text-danger");
-                    output.textContent = "User already exists";
-                } else if (apiData.status === 201) {
-                    alert("Form submitted successfully!");
-                    output.classList.remove("text-danger");
-                    output.classList.add("text-success");
-                    output.textContent = "Form submitted successfully!";
-                    form.reset();
-                    setTimeout(function () {
-                        output.textContent = "";
-                    }, 2000);
-                } else {
-                    alert("Internal server error");
-                    output.classList.add("text-danger");
-                    output.textContent = "Internal server error";
-                }
-            })
-            .catch((error) => {
-                console.error(error);
-                alert("Error in request");
-            });
+        .catch((error) => {
+        
+          alert("Error in request");
+          output.classList.add("text-danger");
+          output.textContent = "Internal server error";
+          output.style.opacity = 1; 
+          isSubmitting = false; 
+        });
     });
-});
+  });
+  
