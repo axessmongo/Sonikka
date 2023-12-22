@@ -24,6 +24,29 @@
     <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
 </head>
 
+<style>
+    /* .flip {
+        position: relative;
+    }
+
+    .flip span.active {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        height: auto;
+    }
+
+    .flip span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 0;
+    } */
+</style>
+
 <body class="overflow-x-hidden" id="main-page">
 
     <!-- for spinner -->
@@ -43,8 +66,11 @@
                 <img src="assets/imagesandvectors/logonew.png" loading="lazy" alt="">
                 <p class="m-0 nav-text">Sonikka</p>
             </a>
-            <a href="consultants.html" class="primary-text text-center secondary-color fw-700 d-none">Move to <br> Legal
-                consultants</a>
+            <a href="consultants.html" class="text-center flip">
+                <span class="primary-text secondary-color fw-700 active">Move to <br> Legal consultants</span>
+                <span class="primary-text secondary-color fw-700">Move to <br> Link1</span>
+                <span class="primary-text secondary-color fw-700">Move to <br> Link2</span>
+            </a>
             <button class="navbar-toggler shadow-none border-0 hamburger hamburger--spring js-hamburger collapsed"
                 type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -1142,6 +1168,25 @@
         setInterval(function () {
             $('.popup').removeClass('pop-ani');
         }, 10000);
+
+        
+        $('.flip span').fadeOut(0)
+        $('.flip span.active').fadeIn()
+        setInterval(() => {
+            const currentSpan = $('.flip span.active');
+            const previousSpan = currentSpan.prev();
+            const nextSpan = currentSpan.next();
+
+            if (nextSpan.length > 0) {
+                nextSpan.addClass('active').fadeIn();
+                currentSpan.removeClass('active').fadeOut(0);
+            } else {
+                // If there is no next sibling, go back to the first sibling
+                $('.flip span').first().addClass('active').fadeIn();
+                currentSpan.removeClass('active').fadeOut(0); // Remove the class from the current active span
+            }
+        }, 2000);
+
     </script>
 </body>
 
