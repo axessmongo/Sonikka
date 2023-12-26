@@ -317,7 +317,7 @@ input::placeholder {
     margin-top: 60px
 }
 
-.home .glowing {
+ .glowing {
     background: #ffc700;
     padding: 6px 12px;
     margin-left: 6px;
@@ -326,6 +326,31 @@ input::placeholder {
     font-size: 14px;
     position: relative;
     overflow: hidden
+}
+
+.connect_method.glowing {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    transform: rotate(-90deg) translate(0%, 0px);
+    right: -100px;
+    border-radius: 6px 6px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    animation: glow-new 1s 2s 1 forwards;
+}
+
+
+
+@keyframes glow-new {
+    0% {
+        right: -100px
+    }
+
+    100% {
+        right: -50px;
+    }
 }
 
 #tour input:focus,
@@ -356,6 +381,7 @@ input::placeholder {
         left: 110%
     }
 }
+
 
 .blog-viewer img,
 .owl-carousel-inex img {
@@ -731,6 +757,67 @@ footer {
     line-height: 20px
 }
 
+.footer-contact .footer-text{
+    transition: .1s;
+}
+.footer-contact .footer-text:hover{
+    color: var(--sonika-tertary-color) !important;
+}
+
+/* faq section */
+#faq .accordion-item {
+    border-radius: 0;
+    border: 1px solid var(--sonika-tertary-color);
+    border-bottom: 0px solid var(--sonika-tertary-color);
+}
+
+#faq .accordion-button{
+    padding-right: 30px;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background: var(--sonika-tertary-color);
+    color: white;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+#faq .accordion-item:last-of-type {
+    border-bottom: 1px solid var(--sonika-tertary-color);
+}
+
+.accordion-button:not(.collapsed)::after,.accordion-button::after {
+    all: unset;
+    content:" ";
+    width: 1px;
+    height: 15px;
+    background: var(--sonika-tertary-color);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    transition: .5s;
+}
+
+.accordion-button::before {
+    width: 16px;
+    height: 2px;
+    content: " ";
+    background: var(--sonika-tertary-color);
+    position: absolute;
+    right: 12.5px;
+}
+
+#faq .accordion-button:not(.collapsed)::before,
+#faq .accordion-button:not(.collapsed)::after{
+    background-color: white;
+}
+
+#faq .accordion-button:not(.collapsed)::after {
+    transform: translate(-0%, -50%) rotate(-90deg);
+    color: white !important;
+}
+
 @media (max-width:1200px) {
     .navbar-nav .nav-link {
         color: var(--sonika-primary-color);
@@ -997,7 +1084,4 @@ footer {
         padding: 0;
         box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0
     }
-}
-.footer-contact .footer-text:hover{
-    color: var(--sonika-tertary-color) !important;
 }
