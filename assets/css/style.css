@@ -754,7 +754,8 @@ footer {
     letter-spacing: .5px;
     font-weight: 300;
     word-spacing: 5px;
-    line-height: 20px
+    line-height: 20px;
+    color: var(--sonika-primary-colornew);
 }
 
 .footer-contact .footer-text{
@@ -999,6 +1000,10 @@ footer {
     #tour input {
         padding: 0;
         font-size: 18px
+    }
+
+    .carousel-indicators button[data-bs-target]{
+        opacity: 1 !important;
     }
 }
 
