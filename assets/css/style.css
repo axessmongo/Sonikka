@@ -8,6 +8,10 @@
     font-family: var(--sonika-secondary-font)
 }
 
+.vh-50{
+    height: 50vh;
+}
+
 .btn1,
 .btn2,
 .sonika-bg1 {
@@ -843,6 +847,10 @@ footer {
 }
 
 @media (max-width:992px) {
+
+    .vh-50{
+        height: 300px;
+    }
 
     .nav-fixed,
     .navbar {
