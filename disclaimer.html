@@ -40,8 +40,11 @@
         <img src="assets/imagesandvectors/logonew.png" loading="lazy" alt="">
         <p class="m-0 nav-text">Sonikka</p>
       </a>
-      <a href="consultants.html" class="primary-text text-center secondary-color fw-700 d-none">Move to <br> Legal
-        consultants</a>
+      <a href="consultants.html" class="text-center flip">
+        <span class="primary-text secondary-color fw-700 active">Move to <br> Legal consultants</span>
+        <span class="primary-text secondary-color fw-700">Move to <br> Link1</span>
+        <span class="primary-text secondary-color fw-700">Move to <br> Link2</span>
+    </a>
       <button class="navbar-toggler shadow-none border-0 hamburger hamburger--spring js-hamburger collapsed"
         type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +55,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link active" href="promoters.html#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#features">Features</a>
@@ -211,7 +214,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center text-center">
-     <p> <a href="disclaimer.html">Disclaimer</a> | <a href="privacy-policy.html"> Privacy-Policy </a></p>
+      <p> <a href="disclaimer.html">Disclaimer</a> | <a href="privacy-policy.html"> Privacy-Policy </a></p>
     </div>
     <div class="d-flex justify-content-center text-center">
       <p class="footer-bottom-text mb-0">Copyright © 2023 - Sonikka | All Rights Reserved | Designed By Axess Tech
@@ -234,5 +237,25 @@
   <!-- contact script -->
   <script src="assets/js/contact.js"></script>
 </body>
+
+<!-- Flip Methods -->
+<script>
+  $('.flip span').fadeOut(0)
+  $('.flip span.active').fadeIn()
+  setInterval(() => {
+      const currentSpan = $('.flip span.active');
+      const previousSpan = currentSpan.prev();
+      const nextSpan = currentSpan.next();
+
+      if (nextSpan.length > 0) {
+          nextSpan.addClass('active').fadeIn();
+          currentSpan.removeClass('active').fadeOut(0);
+      } else {
+          // If there is no next sibling, go back to the first sibling
+          $('.flip span').first().addClass('active').fadeIn();
+          currentSpan.removeClass('active').fadeOut(0); // Remove the class from the current active span
+      }
+  }, 2000);
+</script>
 
 </html>
