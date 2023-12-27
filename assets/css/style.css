@@ -1101,3 +1101,8 @@ footer {
 .footer-contact .footer-text:hover{
     color: var(--sonika-tertary-color) !important;
 }
+
+
+.swiper-pagination-bullet-active{
+    background-color: #006524 !important;
+}
