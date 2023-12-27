@@ -165,6 +165,15 @@ try {
             }, "fast"); // Adjust the duration as needed
         });
 
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#scrollToTopBtn').fadeIn();
+            } else {
+                $('#scrollToTopBtn').fadeOut();
+            }
+        });
+
         // card creating
 
         // Your data - images and content for cards
@@ -277,14 +286,6 @@ try {
             }
         });
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('#scrollToTopBtn').fadeIn();
-            } else {
-                $('#scrollToTopBtn').fadeOut();
-            }
-        });
-
         // Scroll to top when the button is clicked
         $('#scrollToTopBtn').click(function () {
             $('html, body').animate({ scrollTop: 0 });
@@ -296,5 +297,5 @@ try {
 catch {
     alert(err)
 } finally {
-    $('#spinner').hide()
+    $('#spinner').remove()
 }

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/owl-carousel.min.css" />
 </head>
 
-<body>
+<body id="disclaimer">
   <div class="spin" id="spinner">
     <div class="spinner-border text-success" role="status">
       <span class="visually-hidden">Loading...</span>
@@ -190,10 +190,9 @@
       </div>
     </div>
     <div class="d-flex justify-content-center text-center align-items-center">
-      <a class="footer-bottom-text text-primary mb-0" href="disclaimer.html">Disclaimer</a><span
-          class="px-2">|</span><a class="footer-bottom-text text-primary mb-0"
-          href="privacy-policy.html">Privacy-Policy </a>
-  </div>
+      <a class="footer-bottom-text text-primary mb-0" href="disclaimer.html">Disclaimer</a><span class="px-2">|</span><a
+        class="footer-bottom-text text-primary mb-0" href="privacy-policy.html">Privacy-Policy </a>
+    </div>
     <div class="d-flex justify-content-center text-center">
       <p class="footer-bottom-text mb-0">Copyright © 2023 - Sonikka | All Rights Reserved | Designed By Axess Tech
       </p>
@@ -202,8 +201,8 @@
 
   <div class="scroll-top" id="scrollToTopBtn">
     <i class="bi bi-chevron-compact-up"></i>
-    <img src="assets/imagesandvectors/logonew.png" loading="lazy" alt="" class="img-fluid">
-</div>
+    <img src="assets/imagesandvectors/logonew.png" alt="" class="img-fluid">
+  </div>
 
   <!-- jquery downloading js -->
   <script src="assets/js/jquery.min.js"></script>
@@ -212,33 +211,16 @@
   <!-- AOS CDN -->
   <script src="assets/js/aos.js"></script>
   <!-- fancy box js -->
-  <script src="assets/js/fancybox.min.js"></script>
-  <!-- owl carousel JS file -->
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <!-- custom script -->
   <script src="assets/js/script.js"></script>
-  <!-- contact script -->
-  <script src="assets/js/contact.js"></script>
+  <!-- <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#scrollToTopBtn').fadeIn();
+      } else {
+        $('#scrollToTopBtn').fadeOut();
+      }
+    });
+  </script> -->
 </body>
-
-<!-- Flip Methods -->
-<script>
-  $('.flip span').fadeOut(0)
-  $('.flip span.active').fadeIn()
-  setInterval(() => {
-    const currentSpan = $('.flip span.active');
-    const previousSpan = currentSpan.prev();
-    const nextSpan = currentSpan.next();
-
-    if (nextSpan.length > 0) {
-      nextSpan.addClass('active').fadeIn();
-      currentSpan.removeClass('active').fadeOut(0);
-    } else {
-      // If there is no next sibling, go back to the first sibling
-      $('.flip span').first().addClass('active').fadeIn();
-      currentSpan.removeClass('active').fadeOut(0); // Remove the class from the current active span
-    }
-  }, 2000);
-</script>
 
 </html>
