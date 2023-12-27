@@ -44,7 +44,7 @@
         <span class="primary-text secondary-color fw-700 active">Move to <br> Legal consultants</span>
         <span class="primary-text secondary-color fw-700">Move to <br> Link1</span>
         <span class="primary-text secondary-color fw-700">Move to <br> Link2</span>
-    </a>
+      </a>
       <button class="navbar-toggler shadow-none border-0 hamburger hamburger--spring js-hamburger collapsed"
         type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -243,18 +243,18 @@
   $('.flip span').fadeOut(0)
   $('.flip span.active').fadeIn()
   setInterval(() => {
-      const currentSpan = $('.flip span.active');
-      const previousSpan = currentSpan.prev();
-      const nextSpan = currentSpan.next();
+    const currentSpan = $('.flip span.active');
+    const previousSpan = currentSpan.prev();
+    const nextSpan = currentSpan.next();
 
-      if (nextSpan.length > 0) {
-          nextSpan.addClass('active').fadeIn();
-          currentSpan.removeClass('active').fadeOut(0);
-      } else {
-          // If there is no next sibling, go back to the first sibling
-          $('.flip span').first().addClass('active').fadeIn();
-          currentSpan.removeClass('active').fadeOut(0); // Remove the class from the current active span
-      }
+    if (nextSpan.length > 0) {
+      nextSpan.addClass('active').fadeIn();
+      currentSpan.removeClass('active').fadeOut(0);
+    } else {
+      // If there is no next sibling, go back to the first sibling
+      $('.flip span').first().addClass('active').fadeIn();
+      currentSpan.removeClass('active').fadeOut(0); // Remove the class from the current active span
+    }
   }, 2000);
 </script>
 
