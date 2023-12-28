@@ -444,3 +444,19 @@
         transform: scale(0)
     }
 }
+
+.form-animate{
+    animation: form-animate 1s 0s 1 forwards;
+}
+
+@keyframes form-animate {
+    0% {
+       transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.05); 
+     }
+     100% {
+        transform: scale(1); 
+     }
+}
