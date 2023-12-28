@@ -212,7 +212,9 @@ try {
                 <div class="card border-0 shadow-1">
                     <img src="${image}" class="card-img-top" alt="...">
                     <div class="card-body py-4">
-                        <p class="primary-text mb-3">In <a class ="secondary-color" href="blog${num}.html">Luxury</a></p>
+                        <p class="primary-text mb-3">In <a class ="secondary-color"
+                         
+                        ">Luxury</a></p>
                         <h5 class="card-title quartary-header">${title}</h5>
                         <p class="card-text primary-text mb-0">${text}</p>
                     </div>
@@ -221,6 +223,7 @@ try {
             `;
         }
 
+        //href="blog${num}.html
 
         // for (var i = 0; i < cardData.length; i++) {
         //     var card = createCard(cardData[i].image, cardData[i].title, cardData[i].text, i + 1);
