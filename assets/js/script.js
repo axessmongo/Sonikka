@@ -174,6 +174,13 @@ try {
             }
         });
 
+        $('.connect_method').click(function () {
+            $('.tourForm').addClass('form-animate');
+            setTimeout(() => {
+                $('.tourForm').removeClass('form-animate');
+            }, 1000);
+        })
+
         // card creating
 
         // Your data - images and content for cards
